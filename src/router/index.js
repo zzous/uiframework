@@ -7,7 +7,7 @@ const withPrefix = (prefix, routes) => routes.map(route => {
 const routes = [
     {
 
-        redirect: '/section',
+        redirect: '/guide',
         name: 'layout',
         component: () => import('@/components/Layout.vue'),
         children: [
@@ -101,12 +101,12 @@ const routes = [
                 component: () => import('@/views/sample/ButtonPage.vue')
 
             },
-            {
-                path: '/ckeditor',
-                name: 'CkeditorPage',
-                component: () => import('@/views/sample/CkeditorPage.vue')
+            // {
+            //     path: '/ckeditor',
+            //     name: 'CkeditorPage',
+            //     component: () => import('@/views/sample/CkeditorPage.vue')
 
-            },
+            // },
             {
                 path: '/chart',
                 name: 'chartPage',

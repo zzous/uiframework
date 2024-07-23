@@ -11,7 +11,7 @@
                                 <span  class="infolabel"> / 진행중 </span>
                                 <strong class="infovalue">10건</strong>
                             </div>
-                            <div class="barbox"><div class="barChart" id="ablestorage-0"><em class="bar" style="width:30%; background: var(--point-green-color);"></em></div> <em class="datarate" style="color:#">30%</em></div>
+                            <div class="barbox"><div class="barChart" id="ablestorage-0"><em class="bar" style="width:30%; background: var(--point-green-color);"></em></div> <em class="datarate">30%</em></div>
                         </div>
                         
                         <div  class="myjobinfo orderlist">
@@ -47,27 +47,27 @@
             </CardBox>
             <CardBox :cardWidth="800" :cardTitle="'나의 할일'"  :cardSubtext="'사용자가 작업 해야할 작업 목록입니다'">
                 <template #cardContent>
-                    <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
+                    <!-- <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
                     rowSelection="multiple"
                         class="ag-theme-alpine" :domLayout="'autoHeight'">
-                    </AgGridVue>
+                    </AgGridVue> -->
                 </template>
             </CardBox>
             
             <CardBox :cardWidth="800" :cardTitle="'내가 요청한 결재목록'"  :cardSubtext="'사용자가 결재를 요청한 목록입니다'">
                 <template #cardContent>
-                    <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
+                    <!-- <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
                     rowSelection="multiple"
                         class="ag-theme-alpine" :domLayout="'autoHeight'">
-                    </AgGridVue>
+                    </AgGridVue> -->
                 </template>
             </CardBox>
             <CardBox :cardWidth="800" :cardTitle="'내가 요청받은 결재목록'" :cardSubtext="'사용자가 결재 해야할 작업 목록입니다'">
                 <template #cardContent>
-                    <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
+                    <!-- <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
                     rowSelection="multiple"
                         class="ag-theme-alpine" :domLayout="'autoHeight'">
-                    </AgGridVue>
+                    </AgGridVue> -->
                 </template>
             </CardBox>
         </div>

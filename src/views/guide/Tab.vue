@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>tabindex가 필요한 경우 <strong class="tagstyle">&lt;div class="tabcontent"&gt;</strong>태그에 추가하여 사용</li>
                 <li>현재 탭 활성화 처리 <strong class="tagstyle">active</strong> 클래스 추가 하여 처리</li>

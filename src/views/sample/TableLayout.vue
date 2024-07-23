@@ -33,9 +33,9 @@
                         </select>
                     </div>
                 </div>
-                <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
+                <!-- <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
                     class="ag-theme-alpine" :domLayout="'autoHeight'" rowSelection="multiple">
-                </AgGridVue>
+                </AgGridVue> -->
             </div>
             <!-- 페이징 컴포넌트 -->
             <PageNavigation :cntPerPage='pager.size' :itemCount='pager.totalCnt' :currentPage="pager.current"

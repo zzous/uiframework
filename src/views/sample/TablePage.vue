@@ -21,9 +21,9 @@
                         </select>
                     </div>
                 </div>
-                <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
+                <!-- <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
                     class="ag-theme-alpine" :domLayout="'autoHeight'" rowSelection="multiple">
-                </AgGridVue>
+                </AgGridVue> -->
             </div>
             <div class="guideTitle">테이블-페이징</div>
             <div class="flex" style="justify-content:flex-end">

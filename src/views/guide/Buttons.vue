@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>클래스 추가 하여 사이즈 변경 (샘플페이지 참고)</li>
                 <li>클래스 <strong class="tagstyle">.sm</strong> height=30</li>

@@ -4,7 +4,6 @@ import { createPinia } from 'pinia';
 
 import App from './App.vue';
 import router from './router';
-import { AgGridVue } from 'ag-grid-vue3';
 import VueUniversalModal from 'vue-universal-modal';
 import VueDatePicker from '@vuepic/vue-datepicker';
 import PageNavigation from '@/components/PageNavigation.vue';
@@ -36,7 +35,6 @@ app.component('CardBox', CardBox);
 app.component('BarChart', BarChart);
 app.component('BarChartHor', BarChartHor);
 app.component('donutChart', donutChart);
-app.component('AgGridVue', AgGridVue);
 app.component('Carousel', Carousel);
 app.component('Slide', Slide);
 app.component('Navigation', Navigation);

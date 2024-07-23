@@ -6,7 +6,7 @@
                 <div class="menulist">
                     <ul>
                         <li v-for="(item, index) in state.guideMenu" :key="index" :class="{'active':item.name === String(currentPageComponent.__name)}" @click="onChangePage(item.name, item.label)">
-                            <span  v-html="item.label"></span>
+                            <span v-html="item.label"></span>
                         </li>
                     </ul>
                 </div>
@@ -19,6 +19,7 @@
 <script setup>
 import { defineComponent, onMounted, reactive, computed, getCurrentInstance, shallowRef } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
+import Css from '@/views/guide/Css.vue';
 import PageLayout from '@/views/guide/PageLayout.vue';
 import Menu from '@/views/guide/Menu.vue';
 import Section from '@/views/guide/Section.vue';
@@ -41,21 +42,22 @@ const router = useRouter();
 const route = useRoute();
 const state = reactive({
     guideMenu: [
+        {label: 'Css 가이드', name: 'Css'},
         {label: '페이지 레이아웃', name: 'PageLayout'},
-        {label: '카드', name: 'Card'},
-        {label: '메뉴', name: 'Menu'},
-        {label: '타이틀', name: 'Title'},
-        {label: '리스트', name: 'List'},
-        {label: '테이블', name: 'Table'},
-        {label: '테이블 페이징', name: 'Pageing'},
-        {label: '탭', name: 'Tab'},
-        {label: '아코디언', name: 'Accordion'},
-        {label: '버튼', name: 'Buttons'},
-        {label: '폼-input', name: 'FormInput'},
-        {label: '폼-radio,checkbox', name: 'FormInputCheck'},
-        {label: '데이터피커', name: 'DatePicker'},
-        {label: '툴팁', name: 'ToolTip'},
-        {label: '모달팝업', name: 'Modal'}
+        // {label: '카드', name: 'Card'},
+        // {label: '메뉴', name: 'Menu'},
+        // {label: '타이틀', name: 'Title'},
+        // {label: '리스트', name: 'List'},
+        {label: '테이블', name: 'Table'}
+        // {label: '테이블 페이징', name: 'Pageing'},
+        // {label: '탭', name: 'Tab'},
+        // {label: '아코디언', name: 'Accordion'},
+        // {label: '버튼', name: 'Buttons'},
+        // {label: '폼-input', name: 'FormInput'},
+        // {label: '폼-radio,checkbox', name: 'FormInputCheck'},
+        // {label: '데이터피커', name: 'DatePicker'},
+        // {label: '툴팁', name: 'ToolTip'},
+        // {label: '모달팝업', name: 'Modal'}
         // {label: '토스트 팝업', name: 'Toast'},
         // {label: '페이징', name: 'Pageing'},
         // {label: '데이터피커', name: 'Datepicker'}
@@ -63,6 +65,7 @@ const state = reactive({
     componentsTitle: '페이지 레이아웃'
 });
 const componentsMap = {
+    'Css': { component: Css, title: 'Css 가이드' },
     'PageLayout': { component: PageLayout, title: '페이지 레이아웃' },
     'Menu': { component: Menu, title: '메뉴' },
     'Card': { component: Card, title: '카드' },
@@ -130,10 +133,10 @@ onMounted(() => {
 .guidetitle .btn-sample{position: absolute; right:0; top:0}
 .guidememo{padding:20px;}
 .guidememo .memotitle{font-size:16px; font-weight:700;  background:url('/images/icon-ribbon.svg') no-repeat left center; padding-left:20px; margin-bottom:20px}
-.memolist{margin-left:24px}
-.memolist li{position: relative; padding-left:10px; margin-top:10px;}
-.memolist li:nth-of-type(1){margin-top:0px}
-.memolist li:after{content:''; display: block; width:3px; height:3px; border-radius:50%; background:#666; position: absolute; left:0; top:7px;}
+.memo-list{margin-left:24px}
+.memo-list li{position: relative; padding-left:10px; margin-top:10px;}
+.memo-list li:nth-of-type(1){margin-top:0px}
+.memo-list li:after{content:''; display: block; width:3px; height:3px; border-radius:50%; background:#666; position: absolute; left:0; top:7px;}
 .codewrap{padding:20px;}
 .codetitle{font-size:16px; font-weight:700; width:100%; padding:20px 20px 20px 50px; background: url('/images/icon-arrow-up.svg') no-repeat 26px center;position: relative;}
 .codetitle > span{font-size:16px; font-weight:700; width:calc(100% - 70px); display:block; cursor: pointer;}

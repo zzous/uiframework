@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>3Depth기준</li>
                 <li>메뉴 활성화 기준은 라우터 정보가 아닌 Dom 기준</li>

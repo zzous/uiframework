@@ -126,9 +126,9 @@ const state = reactive({
                 { menu: 'button 스타일', pagelink: '/button', depth: [] },
                 { menu: 'input 스타일', pagelink: '/forminput', depth: [] },
                 { menu: 'radio 스타일', pagelink: '/formradio', depth: [] },
-                { menu: 'checkbox 스타일', pagelink: '/formcheck', depth: [] },
+                { menu: 'checkbox 스타일', pagelink: '/formcheck', depth: [] }
                 // { menu: 'select 스타일', pagelink: '/formselect', depth: [] },
-                { menu: 'Editor 스타일', pagelink: '/ckeditor', depth: [] }
+                // { menu: 'Editor 스타일', pagelink: '/ckeditor', depth: [] }
             ]
         },
         {menu: '팝업',
@@ -246,11 +246,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox=
 .fulllogo{position: absolute; left:30px; top:33px;}
 .myinfo-btns{display: flex; justify-content:flex-end;}
 .myname{display: flex; align-items: center; background: var(--point-green-color);; border-radius: 5px; padding: 0 10px; height: 35px; }
-.myname > span{display:inline-block; padding-right:20px;background: url("/images/icon-arrow-down-dark.svg") no-repeat right 2px; color:; cursor: pointer;}
+.myname > span{display:inline-block; padding-right:20px;background: url("/images/icon-arrow-down-dark.svg") no-repeat right 2px; cursor: pointer;}
 .myname > img{width:28px;margin-right:10px;}
 .myname + .myname{margin-left:10px;}
-
-
 
 .contentwrap{position: relative; width:calc(100% - 200px)}
 .contentwrap:before{content:""; display: block; height:250px; width:100%; position: absolute; background:var(--base-txt-color);}

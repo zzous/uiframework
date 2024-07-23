@@ -1,30 +1,23 @@
 <template>
     <div class="guidecontent">
-        <div class="guidetitle">{{ title }}
-            <button type="button" class="btn-sample" @click="goToPage('/section')">샘플페이지 보기</button>
+        <div class="guidetitle">
+            {{ title }}
+            <!-- <button type="button" class="btn-sample" @click="goToPage('/section')">샘플페이지 보기</button> -->
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
             <ul class="memo-list">
-                <li>html5 기본 태그로 사용</li>
-                <li><strong class="tagstyle">&lt;div class="cardwrap" &gt;&lt;/div&gt;</strong>태그 필수 사용 </li>
-                <li><strong class="tagstyle">&lt;div class="card" &gt;&lt;/div&gt;</strong> 추가시 전체 width에 맞춰 유동적으로 배치</li>
-                <li> 태그에 inline 으로 스타일 지정하여(flex-basis)크기 조절 가능</li>
-                
+                <li><strong class="tagstyle">케밥 케이스(kebab case)</strong> `my-class-name` 와 <strong class="tagstyle">BEM(BEM, Block Element Modifier)</strong> `my-class-name__type` 과 혼용하여 사용한다.</li>
+                <li>일반적인 경우 케밥 케이스(kebab case) 사용</li>
+                <li>SCSS 사용</li>
+                <li>공통 모듈 (commponent component) 을 제외한 페이지 STYLE 은 pageName.scss || pageName.css 정의 후 작성한다. 페이지 내에 <strong class="tagstyle">&lt;style&gt; 사용 금지</strong></li>
             </ul>
         </div>
-        <div class="codewrap" v-for="(item, index) in state.codeSample" :key="index">
-            <div :class="['codetitle', state.className]" >
-                <span @click="toggleAcc(index)">{{item.title}}</span>
-                <button type="button" class="btn btn-ss" @click="copyCode(item.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</button>
-            </div>
-            <div :class="['code', item.title]" >
-<pre>
-<code>
-{{ item.sampleCodeJS }}
-</code>
-</pre>
-            </div>
+        <div class="guidememo">
+            <div class="memotitle">SCSS 사용</div>
+            <ul class="memo-list">
+                <li>공통 컴포넌트 (common component) 를 제외한 페이지 내에 <strong class="tagstyle">&lt;style&gt; 사용 금지</strong></li>
+            </ul>
         </div>
     </div>
 </template>

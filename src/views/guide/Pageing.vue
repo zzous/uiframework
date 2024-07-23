@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>API 요청사항 - 리스트 전체 개수, 버튼 클릭 시 마다 가져올 리스트 개수</li>
             </ul>

@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>단일 사용시  <strong class="tagstyle">&lt;span class="radio" &gt;, &lt; span class="checkbox"&gt;</strong> 클래스 추가 하여 버튼 형태로 변경 가능</li>
                 <li>일반 형태와 버튼, 탭버튼으로 사용 가능 부모 태그 &lt;span class="checkbox-group" &gt;, &lt;span class="radio-group" &gt;추가 후  <strong class="tagstyle">btn-group, type2</strong> 클래스 추가 하여 버튼 형태로 변경 가능</li>
@@ -91,7 +91,7 @@ const state = reactive({
 .switch input[type="radio"]:checked+label::after, .switch input[type="checkbox"]:checked+label::after{left:4px}
 .switch input[type="radio"]+label:checked:before, .switch input[type="checkbox"]:checked+label::before{background-color: var(--point-txt-color);}
 `
-        },
+        }
 //         {
 //             title: 'JS',
 //             sampleCodeJS: `// 오픈 이벤트

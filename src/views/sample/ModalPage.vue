@@ -53,7 +53,7 @@ import { useRouter } from 'vue-router';
 import DefaultModal from '@/plugins/modal/modal/DefaultModal.vue';
 import ToolTip from '@/components/ToolTip.vue';
 import { useCommFunc } from '@/core/helper/common.js';
-const {  $Modal, goToPage } = useCommFunc();  
+const {  $Modal, goToPage } = useCommFunc();
 const state = reactive({
     offsetTop: null,
     offsetLeft: null

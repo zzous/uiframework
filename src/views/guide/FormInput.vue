@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>부모 태그 필수 사용(<strong class="tagstyle">&lt;div class="formInputbox" &gt;&lt;/div&gt;</strong>) </li>
                 <li>디자인 변경 및 태그 확장성이 용이 하도록 <strong class="tagstyle">&lt;label&gt;,&lt;input&gt;</strong>태그 영역 분리 하여 사용</li>
@@ -111,7 +111,7 @@ d='M12 13.5H4C3.72386 13.5 3.5 13.2761 3.5 13V3C3.5 2.72386 3.72386 2.5 4 2.5H8.
 .upload-file-box .upload-file-list .upload-file-list-item .img { display: inline-block; position: relative; width: 100px; }
 .upload-file-box .upload-file-list .upload-file-list-item .img img { width: 100%; }
 `
-        },
+        }
 //         {
 //             title: 'JS',
 //             sampleCodeJS: `// 오픈 이벤트

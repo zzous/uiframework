@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>툴팁 버튼 태그는 <strong class="tagstyle">&lt;button type="button" class="btn-tooltip" &gt;&lt;/button&gt;</strong> 사용</li>
                 <li>툴팁의 화살표는 <strong class="tagstyle">&lt;div class="toolTip" &gt;&lt;/div&gt;</strong> 태그에 클래스 추가 하여 사용 가능(.left, right, .top, .bottom)</li>

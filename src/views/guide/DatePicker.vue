@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>vue-datepicker 사용</li>
                 <li>vue-datepicker를 커스터마이징한  <strong class="tagstyle">&lt;vue-datepicker&gt;</strong>로 사용(옵션: (날짜 + 버튼), (시작일 + 종료일), (날짜 단일))</li>
                 <li>날짜 표기 형식은<strong class="tagstyle">dayJS</strong>로 사용(<strong class="tagstyle">/core/helper/common.js</strong>)</li>

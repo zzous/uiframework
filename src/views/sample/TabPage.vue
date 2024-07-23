@@ -54,9 +54,9 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
+                                    <!-- <AgGridVue :columnDefs="state.value" :rowData="state.rowData" :defaultColDef="state.defaultColDef"
                                         class="ag-theme-alpine" :domLayout="'autoHeight'">
-                                    </AgGridVue>
+                                    </AgGridVue> -->
                                 </div>
 
                                 <!-- 페이징 컴포넌트 -->

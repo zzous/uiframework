@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>Header영역<strong class="tagstyle">&lt;div class="listheader" &gt;&lt;/div&gt;</strong>과 본문 영역<strong class="tagstyle">&lt;div class="listline" &gt;&lt;/div&gt;</strong> 나누어 사용 </li>
                 <li>야이콘 영역은 <strong class="tagstyle">&lt;div class="cellIcon" &gt;&lt;/div&gt;</strong>과 40px로 고정되어 있음 </li>

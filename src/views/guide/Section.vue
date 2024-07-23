@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>기본 스타일은 5:5 비율 가로 2단</li>
                 <li>영역 추가 시 <strong class="tagstyle">&lt;div class="sharebox" &gt;&lt;/div&gt;</strong> 추가 하여 수정</li>

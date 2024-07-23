@@ -14,6 +14,7 @@ module.exports = {
     },
     rules: {
         // # OFF
+        'no-useless-escape': 'off',
         'vue/multi-word-component-names': 'off',
         'vue/no-multiple-template-root': 'off',
         'arrow-parens': 'off',

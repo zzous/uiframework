@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>영역을 좌우로 나누어 텍스트 영역과 버튼 또는 form 영역으로 나누어 구분</li>
             </ul>

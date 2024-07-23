@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li>vueuniversalmodal 플러그인과 함께 사용 하며 vueuniversalmodal.css 필수 import하여 사용</li>
                 <li>alert의 경우 <strong class="tagstyle">&lt;div class="ui-alert" &gt;&lt;/div&gt;</strong>태그에 클래스 (.warning, .confirm, .error)마다 아이콘이 다름 (샘플 페이지 참고) </li>

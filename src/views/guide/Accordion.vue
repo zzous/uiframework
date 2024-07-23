@@ -5,7 +5,7 @@
         </div>
         <div class="guidememo">
             <div class="memotitle">기본사용</div>
-            <ul class="memolist">
+            <ul class="memo-list">
                 <li>html5 기본 태그로 사용</li>
                 <li><strong class="tagstyle">&lt;div class="accordionBox" &gt;&lt;/div&gt;</strong>태그에 클래스 (.open) 추가 하여 동작 처리 함 </li>
                 <li><strong class="tagstyle">&lt;div class="accordion_top" &gt;&lt;/div&gt;</strong> 타이틀 영역</li>
