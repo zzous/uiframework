@@ -5,39 +5,47 @@ import vue from '@vitejs/plugin-vue';
 const require = createRequire(import.meta.url);
 
 export default defineConfig(({ mode }) => {
-    const _buildOptions = (mode === 'prod') ? {
-        sourcemap: true,
-        minify: 'terser',
-        terserOptions: {
-            compress: {
-                drop_console: true,
-                drop_debugger: true
+  const _buildOptions = (mode === 'prod') ? {
+    sourcemap: true,
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true
+      }
+    }
+  } : {};
+
+  return {
+    plugins: [
+      vue({
+        template: {
+          compilerOptions: {
+            compatConfig: {
+              MODE: 3
             }
+          },
+          script: {
+            defineModel: true
+          }
         }
-    } : {};
+      })
 
-    return {
-        plugins: [
-            vue({
-                template: {
-                    compilerOptions: {
-                        compatConfig: {
-                            MODE: 3
-                        }
-                    },
-                    script: {
-                        defineModel: true
-                    }
-                }
-            })
-
-        ],
-        resolve: {
-            alias: {
-                '@': fileURLToPath(new URL('./src', import.meta.url))
-            }
-        },
-        server: {
+    ],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      }
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData:
+              '@import "./src/styles/variables";@import "./src/styles/_mixin";'
+        }
+      }
+    },
+    server: {
             // proxy: {
             //     '/api': {
             //         target: 'https://dev-api-adm.kb-ocare.co.kr',
@@ -46,8 +54,8 @@ export default defineConfig(({ mode }) => {
             //         rewrite: path => path.replace(/^\/api/, '')
             //     }
             // }
-        },
-        build: _buildOptions
-    };
+    },
+    build: _buildOptions
+  };
 });
 

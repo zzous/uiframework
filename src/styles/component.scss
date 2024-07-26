@@ -1,0 +1,173 @@
+
+.v-application {
+  font-family: $basic-font, $sub-font !important;
+}
+
+
+/* 체크박스 공통 */
+ .v-input--checkbox{
+    &.v-input--selection-controls{
+            margin:0;
+            padding:0;
+    }
+    .v-input--selection-controls__input{
+        .v-icon {
+            color: $sp-teriary;
+        }
+    }
+        .v-label {
+            font-size: toRem(13);
+            color: $sub-title !important;
+    }
+}
+
+
+/* 콤보박스 공통 */
+.v-autocomplete {
+  .v-input__slot fieldset {
+    border: none !important;
+  }
+  .v-input__slot {
+    font-size: toRem(13);
+    background: $input-bgcolor !important;
+    min-height: 35px !important;
+    height: 40px;
+    border: 1px solid #DBDFE1;
+    border-radius: 5px !important;
+    .v-input__prepend-inner {
+      padding: 16px 15px !important;
+    }
+    .v-input__append-inner{
+      align-self: center;
+      margin-top: 0 !important;
+    }
+    fieldset {
+       border-radius: 5px !important;
+      border: 1px solid $sp-box-border;
+      border-radius: 5px;
+    }
+
+    .v-icon {
+      @include set-text(
+        bold,
+        20,
+        rgba($color: $sp-sky-blue-500, $alpha: 0.5)
+      );
+    }
+
+    ::placeholder {
+      font-size: toRem(13);
+    }
+    .v-text-field__slot {
+      input {
+        padding: 0;
+      }
+    }
+    .v-select__slot {
+      .v-label {
+        position: static !important;
+      }
+    }
+  }
+}
+
+.v-field .v-field__input {
+  ::placeholder {
+    font-size: toRem(13);
+  }
+}
+
+
+/* 탭 공통 */
+.v-slide-group {
+  .v-slide-group__next,.v-slide-group__prev {
+    min-width:0;
+    flex:0 1 30px;
+  }
+  .v-slide-group__wrapper {
+    .v-slide-group__content {
+      .v-tabs-slider-wrapper {
+
+        .v-tabs-slider {
+          background-color: #000;
+        }
+      }
+
+      .v-tab{
+        @include set-text(500, 20, rgba($color: $sp-title, $alpha: 1));
+      }
+      .v-tab {
+        min-width: 35px !important;
+        text-align: left !important;
+        padding: 0 !important;
+        margin-right: 36px !important;
+      }
+    }
+  }
+}
+
+/* 페이지네이션 버튼 그림자효과 삭제 */
+.v-pagination__item, .v-pagination__navigation {
+  box-shadow: none !important;
+  margin:0 4px !important;
+}
+.v-pagination__prev, .v-pagination__next{  margin:0 4px !important;}
+// authority 팝업 스크롤바 생성되는 부분 수정
+.v-dialog {
+  overflow-y: unset !important;
+}
+
+/* 셀렉트 박스 공통 */
+.v-text-field--outlined.v-input--dense .v-label {
+  top: 8px !important;
+}
+
+.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner {
+  margin-top: 6px !important;
+}
+
+/* 툴팁 공통 */
+.v-tooltip__content {
+  max-width: 900px;
+}
+
+/* select box 공통 */
+.v-list-item__title {
+  font-size: 0.8rem;
+}
+
+
+/* text field style 변경 */
+
+.v-text-field {
+  input {
+      padding: 10px;
+  }
+}
+
+
+/* v-input style 변경 */
+.v-input {
+  .v-input__control {
+      > .v-field {
+          &::before {
+              border-color: #D2D4D8;
+          }
+
+          input {
+              color: #1A3350;
+              font-weight: normal;
+              padding: 10px;
+          }
+      }
+  }
+}
+
+.v-input--horizontal .v-input__prepend {
+  margin-inline-end: 0px !important;
+}
+
+/* tab style */
+.v-tab__slider {
+  top: 0;
+}

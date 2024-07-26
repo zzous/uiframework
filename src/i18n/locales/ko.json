@@ -1,0 +1,1385 @@
+{
+  "blockStorage": {
+    "blockStorage": {
+      "button": {
+        "connectInstance": "인스턴스 연결",
+        "createSnapshot": "스냅샷 생성",
+        "delete": "블록 스토리지 삭제",
+        "disconnectInstance": "인스턴스 연결 해제",
+        "new": "블록 스토리지 생성",
+        "recoverSnapshot": "스냅샷 복원"
+      },
+      "label": {
+        "blockStorageName": "블록 스토리지 명",
+        "connectInstanceNameId": "연결 인스턴스 명 / ID",
+        "iops": "IOPS (최대)",
+        "storageType": "스토리지 타입",
+        "volumeSize": "볼륨 용량"
+      },
+      "placeholder": {
+        "blockStorageName": "블록 스토리지 명을 입력하세요",
+        "storageProduct": "스토리지 상품을 선택하세요",
+        "vm": "스토리지를 연결할 인스턴스를 선택하세요.",
+        "search": "블록 스토리지 검색",
+        "snapshotDescription": "스냅샷 설명을 입력하세요. (알파벳과 숫자, 특수문자만 입력 가능합니다.)",
+        "snapshotName": "스냅샷 명을 입력하세요.",
+        "volumeSize": "볼륨 용량을 입력하세요 (GB)"
+      },
+      "table": {
+        "available": "사용 가능",
+        "description": "설명",
+        "inUse": "사용 중",
+        "snapshotName": "스냅샷 명"
+      },
+      "title": {
+        "list": "블록 스토리지 목록",
+        "detail": "블록 스토리지 상세",
+        "new": "블록 스토리지 생성",
+        "snapShot": "스냅샷 생성"
+      }
+    },
+    "snapshot": {}
+  },
+  "button": {
+    "add": "추가",
+    "apply": "적용",
+    "cancel": "취소",
+    "exit":"닫기",
+    "confirm": "확인",
+    "new": "생성",
+    "delete": "삭제",
+    "edit": "수정",
+    "go": "이동하기",
+    "login": "로그인",
+    "next": "다음",
+    "ok": "확인",
+    "prev": "이전",
+    "reset": "초기화",
+    "save": "저장",
+    "signup": "회원가입",
+    "addTag": "태그추가",
+    "use": "사용",
+    "notUse": "사용안함",
+    "register": "등록",
+    "search": "검색"
+  },
+  "cloudConfig": {
+    "alertMessage": {
+      "regist": {
+        "success": "카탈로그에 등록이 완료되었습니다.",
+        "fail": "카탈로그에 등록에 실패하였습니다."
+      },
+      "delete": {
+        "success": "카탈로그에 삭제가 완료되었습니다.",
+        "fail": "카탈로그에 삭제에 실패하였습니다."
+      }
+    },
+    "button": {
+      "regist": "카탈로그 등록",
+      "delete": "카탈로그 삭제"
+    },
+    "blockStorageType": {
+      "fields": {
+        "code": "타입 코드",
+        "maxIops": "Max IOPS",
+        "maxSize": "볼륨 크기",
+        "maxThroughput": "최대 속도",
+        "name": "스토리지 명",
+        "storageMedia": "스토리지 타입"
+      },
+      "title": "블록 스토리지 타입 목록",
+      "placeholder": {
+        "search": "블록 스토리지 타입 검색"
+      }
+    },
+    "fields": {
+      "_comment": "클라우드 구성 공통 항목",
+      "cloudType": "클라우드 타입",
+      "syncType": "동기화 방식",
+      "publicCloudYn": "퍼블릭 여부",
+      "region": "리전",
+      "regionCode": "리전 코드",
+      "syncedAt": "동기화 일시",
+      "cluster": "클러스터",
+      "dataCenter": "데이터센터",
+      "zone":"존",
+      "cpu": "CPU",
+      "cpuCore": "CPU (Core)",
+      "cpuLogicalCore": "CPU (Core HT)",
+      "cpuCapacity": "CPU 클럭 (GHz)",
+      "memory": "메모리",
+      "memoryCapacity": "메모리 (GiB)",
+      "storage": "스토리지",
+      "storageCapacity": "스토리지 용량 (GB)",
+      "hostName": "호스트",
+      "network": "네트워크",
+      "status": "상태",
+      "vm" : "VMs",
+      "moId": "MO_ID",
+      "name": "이름",
+      "type": "유형",
+      "useYn": "사용여부",
+      "use": "사용",
+      "notUse": "미사용",
+      "visibilityType": "가시성",
+      "productTargetYn": "카탈로그 등록 여부"
+    },
+    "instanceType": {
+      "fields": {
+        "architectures": "아키텍쳐",
+        "code": "인스턴스 타입 코드",
+        "family": "패밀리",
+        "gpuMemory": "GPU 메모리",
+        "memory": "Memory",
+        "name": "인스턴스 타입 명",
+        "vcpu": "vCPU"
+      },
+      "title": "인스턴스 타입 목록",
+      "placeholder": {
+        "search": "인스턴스 타입 검색"
+      }
+    },
+    "k8sVersion": {
+      "fields": {
+        "code": "K8s 버전",
+        "name": "K8s 명"
+      },
+      "title": "K8s 버전 목록",
+      "placeholder": {
+        "search": "K8s 버전 검색"
+      }
+    },
+    "k8sImage": {
+      "fields": {
+        "architecture": "아키텍쳐",
+        "code": "K8s 코드",
+        "name": "K8s 명",
+        "osType": "OS 타입"
+      },
+      "title": "K8s 이미지 목록",
+      "placeholder": {
+        "search": "K8s 이미지 검색"
+      }
+    },
+    "osImage": {
+      "fields": {
+        "architecture": "아키텍쳐",
+        "code": "이미지 타입 코드",
+        "description": "설명",
+        "name": "OS 이미지 명",
+        "osType": "OS"
+      },
+      "title": "OS 이미지 목록",
+      "placeholder": {
+        "search": "OS 이미지 검색"
+      }
+    },
+    "region": {
+      "fields": {},
+      "title": "리전 목록",
+      "placeholder": {
+        "search": "리전 검색"
+      }
+    },
+    "cluster": {
+      "title": "클러스터 목록",
+      "placeholder": {
+        "search": "클러스터 검색"
+      },
+      "label": {
+        "hostList": "호스트 목록"
+      }
+    },
+    "host": {
+      "fields": {
+        "hypervisor": "하이퍼바이저",
+        "hostType": "호스트타입",
+        "rack": "Rack",
+        "cpuUsage": "CPU 사용량",
+        "cpuAvailability": "CPU 가용률",
+        "memoryUsage": "메모리 사용량",
+        "memoryAvailability": "메모리 가용률",
+        "bootUptime": "가동시간",
+        "lastBootTime": "마지막 부팅시간",
+        "model": "모델",
+        "cpuModel": "프로세서",
+        "hyperthreading": "하이퍼스레딩",
+        "socket": "프로세서 소켓",
+        "corePerSocket": "소켓당 코어 수",
+        "nic": "NIC"
+      },
+      "title": "호스트 목록",
+      "placeholder": {
+        "search": "호스트 검색"
+      },
+      "label": {
+        "storageList": "데이터스토어 목록",
+        "networkList": "네트워크 목록"
+      }
+    },
+    "datastore": {
+      "fields": {
+        "storageAvailability": "가용 스토리지",
+        "storageFreeSpace": "사용 가능 공간",
+        "location": "위치",
+        "runningStatus": "실행 상태",
+        "provisonedSpace": "프로비저닝 공간 (GB)",
+        "usedSpace": "사용 공간 (GB)",
+        "hostCpu": "호스트 CPU (GHz)",
+        "hostMemory": "호스트 Memory (GiB)"
+      },
+      "title": "데이터스토어 목록",
+      "placeholder": {
+        "search": "데이터스토어 검색"
+      },
+      "label": {
+        "volumeList": "디스크 목록"
+      }
+    },
+    "network" : {
+      "title": {
+        "list": "네트워크 목록",
+        "detail": "네트워크 상세",
+        "register": "네트워크 등록"
+      },
+      "tab": {
+        "ip": "IP"
+      },
+      "fields": {
+        "ip": "IP",
+        "usage": "용도",
+        "connectDevice": "연결 장치"
+      },
+      "button": {
+        "edit": "기본 정보 수정",
+        "ipEdit": "ip 관리"
+      }
+    },
+    "label": {
+      "defaultInfo": "기본 정보",
+      "specInfo": "스펙 정보"
+    },
+    "text": {
+      "auto": "자동",
+      "manual": "수동",
+      "no": "아니오",
+      "yes": "예",
+      "poweredOn": "가동중",
+      "powerdOff": "정지",
+      "enable": "가능",
+      "disable": "불가능",
+      "statusGreen": "정상",
+      "statusYellow": "경고",
+      "statusRed": "문제발생"
+    },
+    "title": "클라우드 구성 목록",
+    "zone": {
+      "fields": {
+        "code": "존 타입 코드",
+        "name": "존 명"
+      },
+      "title": "존 목록",
+      "placeholder": {
+        "search": "존 검색"
+      }
+    }
+  },
+  "code": "ko",
+  "common": {
+    "discirbe": {
+      "tagKey": "* 태그 키를 지정하세요.",
+      "tagValue": "(선택) 태그 값을 입력하세요."
+    },
+    "message": {
+      "confirmCancel": "작성 중이던 데이터가 사라집니다. 계속하시겠습니까?",
+      "confirmDelete": "정말로 삭제하시겠습니까?",
+      "failCopy": "복사하지 못했습니다.",
+      "failCreate": "생성하지 못했습니다.",
+      "failDelete": "삭제하지 못했습니다.",
+      "failUpdate": "저장하지 못했습니다.",
+      "failRun": "시작하지 못했습니다.",
+      "failStop": "중지하지 못했습니다.",
+      "failRestart": "재부팅하지 못했습니다.",
+      "failSnapshot": "스냅샷 생성을 실패하였습니다.",
+      "failEditInstanceType": "인스턴스 타입 변경을 실패하였습니다.",
+      "noData": "데이터가 존재하지 않습니다.",
+      "snapshotHelper": "* 스냅샷 설명은 선택사항 입니다.",
+      "successCopy": "복사되었습니다.",
+      "successCreate": "생성되었습니다.",
+      "successDelete": "삭제되었습니다.",
+      "successUpdate": "저장되었습니다.",
+      "successRun": "시작되었습니다.",
+      "successStop": "중지되었습니다.",
+      "successRestart": "재부팅되었습니다.",
+      "successSnapshot": "스냅샷을 생성하였습니다.",
+      "successEditInstanceType": "인스턴스 타입을 변경하였습니다.",
+      "tagHelper": "리소스 검색과 필터링에 사용합니다. 키와 값으로 설정됩니다.",
+      "volumeSizeHelper": "* 최소 10 GB, 최대 1000 GB 까지 입력할 수 있습니다.",
+      "confirmDeregister": "선택한 상품을 비공개하시겠습니까?",
+      "confirmRegister": "선택한 상품을 공개하시겠습니까?",
+      "confirmTag":"선택한 태그를 삭제 하시겠습니까?"
+    },
+    "placeholder": {
+      "cloudType": "클라우드 타입을 선택하세요.",
+      "region": "리전을 선택하세요.",
+      "vpc": "VPC를 선택하세요.",
+      "zone": "존을 선택하세요.",
+      "serviceGroup": "테넌트를 선택하세요.",
+      "subnet": "서브넷을 선택하세요.",
+      "publicIp": "공인 IP를 선택하세요.",
+      "keypair": "인증키를 선택하세요.",
+      "securityGroup": "보안그룹을 선택하세요.",
+      "tagKey": "키",
+      "tagValue": "값",
+      "tagSearch": "태그 검색",
+      "network": "네트워크를 선택하세요.",
+      "serviceType": "서비스 타입을 선택하세요.",
+      "ipv4CidrBlock": "10.0.0.0/24"
+    },
+    "label": {
+      "lastUpdate": "기준일자"
+    },
+    "title": {
+      "notificationList": "알림 목록",
+      "defaultInfo": "기본 정보"
+    }
+  },
+  "dashboard": {
+    "label": {
+      "alarm": "알림",
+      "all": "전체",
+      "avg": "평균",
+      "blockStorage": "블록 스토리지",
+      "danger": "위험",
+      "disk": "디스크",
+      "diskCapacity": "디스크 용량",
+      "diskLatency": "디스크 레이턴시",
+      "emergency": "심각",
+      "error": "에러",
+      "etc": "기타",
+      "gpuMemoryUsage": "GPU 메모리 사용량",
+      "gpuUsage": "GPU 사용량",
+      "instanceCnt": "인스턴스 수",
+      "max": "최대",
+      "memory": "메모리",
+      "memoryCapacity": "메모리 용량",
+      "min": "최소",
+      "nasStorage": "NAS",
+      "networkIn": "네트워크-인",
+      "objectCount": "객체 수",
+      "objectStorage": "오브젝트 스토리지",
+      "powerOff": "전원 OFF",
+      "powerOn": "전원 On",
+      "publicIpCnt": "공인 IP 수",
+      "subnetCnt": "서브넷 수",
+      "temperature": "온도",
+      "vCPU": "vCPU",
+      "vcpuCnt": "vCPU 수",
+      "vpcCnt": "VPC 수",
+      "warning": "주의",
+      "watt": "전력(와트)"
+    },
+    "title": {
+      "name": "대시보드",
+      "cloudType": "클라우드 타입 별 인스턴스 수",
+      "diskStatus": "디스크 현황",
+      "eventError": "이벤트 / 장애 현황",
+      "faq": "자주 묻는 질문",
+      "gpuMemory": "GPU / 메모리 현황",
+      "instanceSpec": "인스턴스 성능 지표 평균 값",
+      "instanceStatus": "인스턴스 상태",
+      "instanceType": "인스턴스 타입 별 인스턴스 수",
+      "list": "서비스/자원 이용현황",
+      "memoryUsage": "메모리 사용량",
+      "networkStatus": "네트워크 현황",
+      "notice": "공지사항",
+      "resourceStatus": "자원 현황",
+      "serviceStatus": "서비스 신청 현황",
+      "storageUsage": "스토리지 사용량",
+      "vCpuUsage": "vCPU 사용량",
+      "vpcSubnetStatus": "VPC 별 인스턴스 / 서브넷 수"
+    },
+    "placeholder": {
+      "serviceGorup": "테넌트가 존재하지 않습니다."
+    }
+  },
+  "deploymentCatalog": {
+    "deploymentImageProduct": {}
+  },
+  "fields": {
+    "accountId": "계정",
+    "basedNetworkACL": "네트워크 ACL",
+    "basedRouteTable": "기본 라우팅 테이블",
+    "basedSubent": "기본 서브넷",
+    "basedVPC": "기본 VPC",
+    "blockStorage": "블록 스토리지",
+    "blockStorageId": "블록 스토리지 ID",
+    "blockStorageName": "블록 스토리지 명",
+    "blockStorageNameId": "블록 스토리지 명 / ID",
+    "charge": "요금",
+    "checkDnsHost": "DNS 확인",
+    "cloudType": "클라우드 타입",
+    "companyName": "회사 명",
+    "confirmPassword": "패스워드 확인",
+    "connectInstanceNameId": "연결 인스턴스 명 / ID",
+    "connectInstanceSelect": "연결 인스턴스 선택",
+    "connectionState": "연결 상태",
+    "connectTo": "연결 대상",
+    "contact": "휴대폰 번호",
+    "cpu": "CPU(Core)",
+    "createdAt": "생성일시",
+    "updatedAt": "업데이트 일시",
+    "cidrBlock": "소스",
+    "dataCenter": "데이터 센터",
+    "defaultYn": "기본 값",
+    "department": "부서",
+    "deploymentYn": "배포여부",
+    "description": "설명",
+    "device": "device",
+    "dnsHost": "DNS 호스트",
+    "edit": "편집",
+    "editableYn": "수정",
+    "email": "이메일",
+    "employeeId": "사번",
+    "enabled": "활성화 여부",
+    "firstName": "이름",
+    "fromPort": "포트 시작",
+    "feeApplyRequest": "요금 반영 요청",
+    "inboundCount": "인바운드 규칙 수",
+    "inboundRule": "인바운드 규칙",
+    "instance": "인스턴스",
+    "instanceId": "인스턴스 ID",
+    "instanceName": "인스턴스 명",
+    "instanceType": "인스턴스 타입",
+    "ipType": "IP 타입",
+    "cidr": "CIDR",
+    "ipv4Cidr": "IPv4 CIDR",
+    "ipv4CidrBlock": "IPv4 CIDR 블록",
+    "autoPublicIp": "Public IP 자동 할당",
+    "Ipv4Count": "IPv4 IP수",
+    "ipVersion": "IP 버전",
+    "keyFormat": "키 파일 형식",
+    "keyName": "인증키 명",
+    "keyPair": "인증키",
+    "keyPairId": "인증키 ID",
+    "keyPairStatus": "인증키 상태",
+    "keyType": "인증키 타입",
+    "language": "언어",
+    "lastName": "성",
+    "maxIops": "IOPS (최대)",
+    "memory": "메모리(GiB)",
+    "memoryMB": "메모리(MiB)",
+    "network": "네트워크",
+    "networkAcl": "기본 네트워크 ACL",
+    "networkACL": "네트워크 ACL",
+    "networkAclId": "네트워크 ACL ID",
+    "networkAclName": "네트워크 ACL 명",
+    "networkInterfaceNormal": "네트워크 인터페이스",
+    "networkInterface": "네트워크 인터페이스 명 / ID",
+    "networkInterfaceId": "네트워크 인터페이스 ID",
+    "networkInterfaceName": "네트워크 인터페이스 명",
+    "organization": "조직",
+    "osImage": "OS",
+    "outboundCount": "아웃바운드 규칙 수",
+    "outboundRule": "아웃바운드 규칙",
+    "ownerId": "소유자",
+    "password": "패스워드",
+    "portRange": "포트 범위",
+    "position": "직책",
+    "priceUnit": "과금 단위",
+    "privateIpAddress": "프라이빗 IP",
+    "productDeploy": "상품 배포",
+    "productRelease": "상품 공개",
+    "productRole": "제품 사용 권한",
+    "protocolType": "프로토콜",
+    "protocolTypeName": "프로토콜 명",
+    "prodName": "상품명",
+    "publicIp": "퍼블릭 IP",
+    "publicIpName": "공인 IP 명",
+    "routingTable": "라우팅 테이블",
+    "rank": "직급",
+    "region": "리전",
+    "ruleAction": "허용/거부",
+    "ruleNum": "규칙 번호",
+    "ruleType": "유형",
+    "ruleTypeName": "유형",
+    "secGroupID": "보안그룹 ID",
+    "storageName": "스토리지 명",
+    "securityDescription": "보안그룹 설명",
+    "securityGroup": "보안그룹",
+    "securityGroupName": "보안그룹 명",
+    "securityGroupNameId": "보안그룹 명 / ID",
+    "securityGroupRuleIdx": "보안그룹 규칙 ID",
+    "serviceGroup": "테넌트",
+    "snapshotDescription": "스냅샷 설명",
+    "snapshotName": "스냅샷 명",
+    "snapshotNameId": "스냅샷 명 / ID",
+    "status": "상태",
+    "storageProduct": "스토리지 상품",
+    "storageDescription": "스토리지 설명",
+    "storageType": "스토리지 타입",
+    "storageCapacity": "스토리지 용량",
+    "storageFlag": "스토리지 구분",
+    "serviceType": "서비스 타입",
+    "serviceTarget": "서비스 대상",
+    "storageType2": "스토리지 유형",
+    "priceUnit2": "과금 단위",
+    "fee": "요금",
+    "effective": "요금제",
+    "subnet": "서브넷",
+    "subnetDescription": "서브넷 설명",
+    "subnetId": "서브넷 ID",
+    "subnetName": "서브넷 명",
+    "subnetNameId": "서브넷 명 / ID",
+    "tag": "태그",
+    "team": "팀",
+    "template": "템플릿",
+    "toPort": "포트 종료",
+    "type": "타입",
+    "userId": "사용자 ID",
+    "username": "사용자 명",
+    "usernameEn": "사용자 명(영문)",
+    "usernameKr": "사용자 명(한글)",
+    "vcpu": "vCPU (Core)",
+    "vmId": "연결 인스턴스",
+    "volSize": "볼륨 용량",
+    "volumeName": "스토리지 명",
+    "volumeSize": "용량",
+    "maxVolumeSize": "최대 용량",
+    "volumeType": "스토리지 타입",
+    "vpc": "VPC",
+    "vpcId": "VPC ID",
+    "vpcName": "VPC 명",
+    "vpcNameId": "VPC 명 / ID",
+    "vpcSelect": "VPC 선택",
+    "zone": "존",
+    "notificationContents": "알림 내용",
+    "resourceId": "리소스 ID",
+    "resourceName": "리소스 명",
+    "routingName":"라우팅 명",
+    "routingMethod": "라우팅 방식",
+    "serverType": "서버 타입",
+    "instanceServiceType": "서비스 타입",
+    "bucketName": "버킷 명",
+    "objectCount": "객체 수",
+    "size": "크기",
+    "sizeByte": "크기(Byte)",
+    "accessPath": "접근 경로",
+    "accessKey": "액세스 키",
+    "secretKey": "시크릿 키",
+    "accessKeyName": "액세스 키 명",
+    "objectName": "오브젝트 명",
+    "osGroup": "OS 템플릿",
+    "baseStorageSize": "기본 스토리지 용량",
+    "useYn": "사용여부"
+  },
+  "groupTemplateCatalog": {
+    "instanceConfigurationProduct": {},
+    "k8sConfigurationProduct": {}
+  },
+  "instance": {
+    "button": {
+      "connectNetworkInterface": "네트워크 인터페이스 연결",
+      "connectPublicIp": "공인 IP 연결",
+      "deleteInstance": "삭제",
+      "disconnectNetworkInterface": "네트워크 인터페이스 분리",
+      "disconnectPublicIp": "공인 IP 연결해제",
+      "edit": "인스턴스 관리",
+      "image": "인스턴스 이미지 관리",
+      "networkInterface": "네트워크 인터페이스 관리",
+      "newImage": "인스턴스 이미지 생성",
+      "newInstance": "생성",
+      "newInstance2": "인스턴스 생성(Type2)",
+      "editInstanceType": "인스턴스 타입 변경",
+      "newSnapshot": "스냅샷 생성",
+      "publicIp": "공인 IP 관리",
+      "rebootInstance": "재부팅",
+      "restoreImage": "인스턴스 이미지 복원",
+      "restoreSnapshot": "스냅샷 복원",
+      "runInstance": "시작",
+      "securityGroup": "보안그룹 설정",
+      "snapshot": "스냅샷 관리",
+      "stopInstance": "중지"
+    },
+    "placeholder": {
+      "search": "인스턴스 검색"
+    },
+    "title": {
+      "detail": "인스턴스 상세",
+      "configInstance": "인스턴스 구성",
+      "configNetworkSecurity": "네트워크 및 보안 구성",
+      "configStorage": "스토리지 구성",
+      "list": "인스턴스 목록",
+      "selectServiceGroup": "테넌트 선택",
+      "serviceGroup": "테넌트"
+    }
+  },
+  "keypair": {
+    "button": {
+      "delete": "인증키 삭제",
+      "down": "인증키 다운로드",
+      "new": "인증키 생성"
+    },
+    "label": {
+      "using": "사용중"
+    },
+    "placeholder": {
+      "search": "인증키 검색",
+      "keyType": "인증키 타입을 선택하세요.",
+      "keyName": "인증키 명을 입력하세요."
+    },
+    "title": {
+      "list": "인증키 목록",
+      "new": "인증키 생성"
+    }
+  },
+  "langs": {
+    "en": "English",
+    "ko": "한국어"
+  },
+  "language": "한국어",
+  "menu": {},
+  "myInfo": {
+    "message": {
+      "failedEditUserInfo": "사용자 정보를 수정하지 못하였습니다.",
+      "failedNewUserInfo": "사용자 정보를 등록하지 못하였습니다.",
+      "successedEditUserInfo": "사용자 정보를 수정하였습니다.",
+      "successedNewUserInfo": "사용자 등록을 완료하였습니다."
+    },
+    "productRole": "제품 사용 권한",
+    "shortTitle": "나의 정보",
+    "title": "나의 정보"
+  },
+  "securityGroup": {
+    "placeholder": {
+      "ruleType": "유형을 선택하세요."
+    }
+  },
+  "networkAcl": {
+    "button": {
+      "connectSubnet": "서브넷 연결",
+      "delete": "네트워크 ACL 삭제",
+      "edit": "편집",
+      "save": "저장",
+      "inboundRule": "인바운드 규칙",
+      "new": "네트워크 ACL 생성",
+      "newRuleReg": "신규 규칙 등록",
+      "outboundRule": "아웃바운드 규칙",
+      "tag": "태그 관리"
+    },
+    "placeholder": {
+      "description": "생성하는 네트워크 ACL에 대한 설명을 입력하세요.",
+      "inboundRuleFilter": "인바운드 규칙 필터",
+      "ipv4CidrBlock": "10.0.0.0/24",
+      "name": "네트워크 ACL 명을 입력하세요",
+      "outboundRuleFilter": "아웃바운드 규칙 필터",
+      "search": "네트워크 ACL 검색",
+      "connectSubnet": "서브넷 열결 필터"
+    },
+    "table": {
+      "permissionEntry": "권한 항목",
+      "portRange": "포트 범위",
+      "protocolType": "프로토콜",
+      "ruleAction": "허용/거부",
+      "ruleNum": "규칙 번호",
+      "ruleType": "유형",
+      "source": "소스",
+      "subnet": "서브넷"
+    },
+    "title": {
+      "list": "네트워크 ACL 목록",
+      "detail": "네트워크 ACL 상세",
+      "new": "네트워크 ACL 생성"
+    }
+  },
+  "networkCatalog": {
+    "k8sProduct": {},
+    "publicIpProduct": {}
+  },
+  "networkInterface": {
+    "button": {
+      "connectInstance": "인스턴스 연결",
+      "delete": "네트워크 인터페이스 삭제",
+      "disconnectInstance": "인스턴스 연결 해제",
+      "new": "네트워크 인터페이스 생성"
+    },
+    "title": {
+      "list": "네트워크 인터페이스 목록",
+      "detail": "네트워크 인터페이스 상세",
+      "new": "네트워크 인터페이스 생성"
+    },
+    "placeholder": {
+      "search": "네트워크 인터페이스 검색"
+    }
+  },
+  "publicIp": {
+    "button": {
+      "connect": "인스턴스 연결",
+      "delete": "공인 IP 삭제",
+      "disconnect": "인스턴스 연결 해제",
+      "new": "공인 IP 생성"
+    },
+    "placeholder": {
+      "search": "공인 IP 검색"
+    },
+    "title": {
+      "list": "공인 IP 목록",
+      "detail": "공인 IP 상세",
+      "new": "공인 IP 생성"
+    }
+  },
+  "resourceConfig": {
+    "button": {
+      "addConfigBox": "구성함 추가",
+      "addStorage": "스토리지 추가",
+      "createKeyPair": "인증키 생성",
+      "createResource": "자원 생성",
+      "createSubnet": "서브넷 생성",
+      "refresh": "새로고침"
+    },
+    "label": {
+      "addtionalStorage": "추가 스토리지",
+      "baseStorage": "기본 스토리지",
+      "billingTotal": "합계 요금",
+      "billingType": "과금방식(요금제)",
+      "configIp": "IP 설정"
+    },
+    "message": {
+      "billingTotal_1": "구성하신 상품 기준으로 월간 비용에 대한 예측 비용입니다.",
+      "billingTotal_2": "네트워크 트래픽에 대한 비용은 제외되어 있습니다.",
+      "billingTotal_3": "위 자원 구성 내역으로 자원을 생성합니다.",
+      "confirmDeleteInstance": "선택한 인스턴스를 정말로 삭제하시겠습니까?",
+      "confirmRunInstance": "선택한 인스턴스를 정말로 시작하시겠습니까?",
+      "confirmStopInstance": "선택한 인스턴스를 정말로 중지하시겠습니까?",
+      "confirmRestartInstance": "선택한 인스턴스를 정말로 재부팅하시겠습니까?",
+      "doCreateSubnet": "서브넷이 없을 경우, 서브넷 생성 후 진행하세요.",
+      "failCreate": "자원 생성을 요청하지 못하였습니다.",
+      "inputInstanceName": "인스턴스 명을 입력하세요.",
+      "publicIpHelp": "공인IP 를 사용할 경우, IP는 자동으로 할당됩니다.",
+      "selectBilingType": "인스턴스 운영에 필요한 과금방식(요금제)을 선택하세요.",
+      "selectCloudProvider": "클라우드 서비스 제공자를 선택하세요.",
+      "selectKeyPair": "인증키를 선택하세요. *인증키가 없을 경우, 인증키 생성 후 진행하세요.",
+      "selectPublicIp": "공인 IP 사용 여부를 선택하세요.",
+      "selectRegion": "클라우드를 사용하는 리전(지역) 을 선택하세요.",
+      "selectSecurityGroup": "보안 규칙이 적용되어 있는 보안그룹을 선택하세요.",
+      "selectServerSpec": "vCPU, Memory, GPU 등 서버의 사양을 선택하세요.",
+      "selectStorageSpec": "스토리지의 타입 선택 후 용량을 입력하십시오.",
+      "selectStorageType": "스토리지는 SSD 와 HDD 타입으로 준비되어 있습니다.",
+      "selectSubnet": "서브넷을 선택하세요.",
+      "selectTemplate": "인스턴스 시작에 필요한 운영체제와 소프트웨어, 어플리케이션이 포함된 템플릿을 선택하세요.",
+      "successCreate": "자원 생성을 요청하였습니다.",
+      "updateKeyPair": "인증키가 조회되지 않을 경우, 업데이트 버튼으로 목록을 갱신하십시오.",
+      "updateSubnet": "서브넷이 조회되지 않을 경우, 업데이트 버튼으로 목록을 갱신하십시오."
+    },
+    "title": {
+      "main": "클라우드 자원 구성 마법사",
+      "editInstanceType": "인스턴스 타입 변경",
+      "summary": "자원 구성 현황"
+    }
+  },
+  "user": {
+    "modal": {
+      "userInfo": {
+        "title": "사용자 정보"
+      },
+      "productRole" : {
+        "title" : "제품 사용 권한 설정",
+        "selectProducts": "제품 선택",
+        "setAuthorization": "권한 설정",
+        "buttons": {
+          "submit": "적용",
+          "cancel": "취소"
+        }
+      },
+      "organizationChart": {
+        "title": "조직도"
+      }
+    },
+    "label": {
+      "userAvatar": "사진 첨부 (사용자 사진)"
+    },
+    "message": {
+      "successedEditUserInfo": "사용자 정보를 수정하였습니다.",
+      "failedEditUserInfo": "사용자 정보를 수정하지 못하였습니다.",
+      "successedNewUserInfo":"사용자 등록을 완료하였습니다.",
+      "failedNewUserInfo": "사용자 정보를 등록하지 못하였습니다."
+    },
+    "placeholder": {
+      "userAvatarRule": "15MB 미만의 png, jpeg 형식의 파일"
+    },
+    "button": {
+      "settingRole": "권한 설정"
+    }
+  },
+  "ResourceConfigWizard":{
+    "title": {
+      "start_1": "스트라토 CMP",
+      "start_2": "자원 구성 마법사",
+      "type": "상품 유형",
+      "recommend": "상품 추천",
+      "setting": "추가 설정",
+      "done": "자원 구성 완료"
+    },
+    "message": {
+      "intro_1": "AI 가 도와주는 빠르고 정확한 클라우드 관리",
+      "intro_2": "스트라토 AI 를 이용하면 클라우드 상품 추천과 자원 생성도 척척!",
+      "intro_3": "무한한 잠재력을 지닌 스트라토 AI를 활용하여 클라우드 자원을 생성해보세요.",
+      "type_1": "vCPU, 메모리, OS 템플릿, 스토리지 사양 선택 후 상품을 검색하세요.",
+      "type_2": "상품 유형을 선택하여 스트라토 AI 에게 상품 추천을 진행하세요.",
+      "typeVmType": "클라우드 사용 목적을 고려하여 인스턴스 타입을 CPU, 메모리, GPU, 밸런스 타입 중에서 선택하세요.",
+      "typeVmType2": "클라우드 운영 시 성능, 비용, 효율 중에서 우선으로 고려 중인 사항은 무엇입니까?",
+      "noResult": "검색 결과가 없습니다.",
+      "recommend_1": "선택 사양으로 검색한 클라우드 상품 리스트입니다.",
+      "recommend_2": "그 중에서도 주목할 만 한 상품을 다음과 같이 추천합니다.",
+      "done": "다음과 같이 클라우드 자원 구성을 완료 하였습니다.",
+      "subnet": "가용 영역의 기본 서브넷 (자동할당)",
+      "publicIp": "새로운 공인 IP (자동할당)",
+      "securityGroup": "새 보안그룹 (자동할당)",
+      "serviceGroupError": "테넌트를 선택하세요.",
+      "subnetError": "서브넷을 선택하세요.",
+      "keypairError": "인증키를 선택하세요.",
+      "securityGroupError": "보안그룹을 선택하세요.",
+      "storageError": "스토리지 용량을 확인하세요.",
+      "setting_1": "테넌트, 서브넷, 공인 IP, 인증키, 보안그룹, 스토리지를 설정합니다.",
+      "serviceGorup1": "클라우드 자원을 이용/운영할 테넌트를 선택하세요.",
+      "serviceGorup2": "*테넌트 없음으로 선택할 경우, 기본 테넌트가 자동 생성됩니다.",
+      "subnet_1": "서브넷을 설정하세요.",
+      "subnet_2": "기본 서브넷을 할당 받아서 사용하거나 수동으로 설정 하세요.",
+      "subnet_3": "(서브넷이 조회되지 않을 경우, 업데이트 버튼으로 목록을 갱신하십시오.",
+      "publicIp_1": "공인 IP 사용 유무를 선택하세요.",
+      "publicIp_2": "공인IP 를 사용할 경우, IP는 자동으로 할당됩니다.",
+      "keypair_1": "인증키를 선택하세요.",
+      "keypair_2": "인증키가 없을 경우, 인증키 생성 후 진행하세요.",
+      "keypair_3": "(인증키가 조회되지 않을 경우, 업데이트 버튼으로 목록을갱신하십시오.)",
+      "addStorage_1": "기본 스토리지 외 추가 스토리지를 설정 할 수 있습니다.",
+      "serviceGroup1": "보안그룹을 선택하세요.",
+      "serviceGroup2": "보안그룹은 자동할당 받을 수 있고, 수동으로도 설정 가능합니다.",
+      "tag": "리소스 검색과 필터링에 사용합니다. 키와 값으로 설정됩니다.",
+      "vmCpu": "vCPU 의 비율을 높게 가져가는 컴퓨팅에 집중된 인스턴스 타입 입니다.",
+      "vmMemory": "대용량 데이터 처리와 같이 메모리 처리량이 많은 업무에 적합한 인스턴스 타입 입니다.",
+      "vmGpu": "딥 러닝, AI, 모델 학습, 분산시스템과 같이 GPU 집중된 인스턴스 타입 입니다.",
+      "vmBalance": "vCPU, 메모리를 균형있게 할당한 인스턴스 타입 입니다.",
+      "specLow": "vCPU 의 비율이 낮은 상대적으로 저성능의 상품을 추천합니다. 예) 개인 웹 사이트, 데이터베이스 등 운영에 적합",
+      "specStandard":"vCPU 와 메모리의 비율이 균형있게 할당된 상품을 추천합니다.",
+      "specHigh":"vCPU 의 비율이 높은 성능 우선의 상품을 추천합니다. 예) 고성능 웹 서버, 비디오 인코딩, 딥 러닝 서버 등 운영에 적합",
+      "costLow": "시스템의 성능 대비 운영 비용이 저렴한 상품을 추천합니다.",
+      "costStandard": "시스템의 성능과 운영 비용을 균형 있게 할당한 상품을 추천합니다.",
+      "costHigh": "운영 비용이 가장 높은 상품을 우선으로 상품을 추천합니다.",
+      "efficiency": "시스템의 성능과 운영 비용을 균형 있게 할당한 상품을 추천합니다."
+    },
+    "button": {
+      "smartSearch": "스마트 검색",
+      "smartSearch_1": "AI 를 활용한",
+      "smartSearch_2": "빠르고 정확한 상품 검색",
+      "custom": "커스터마이징",
+      "custom_1": "필요한 사양을",
+      "custom_2": "직접 선택하며 상품 검색",
+      "prodSearch": "상품 검색",
+      "prodCommend": "상품 검색",
+      "more": "더보기",
+      "reSearch": "다시 검색",
+      "select": "선택",
+      "popular": "인기",
+      "done": "완료",
+      "resBuild": "자원 구성",
+      "subnetCreate": "서브넷 생성",
+      "subnetUse": "서브넷사용 (자동할당)",
+      "subnetMenual": "서브넷 수동 설정",
+      "update": "업데이트",
+      "publicIpUse": "공인 IP 사용 (자동할당)",
+      "publicIpNotUse": "공인 IP 를 사용하지 않습니다.",
+      "keypairCreate": "인증키 생성",
+      "addStorage": "스토리지 추가",
+      "useStorage": "추가 스토리지 사용 (자동할당)",
+      "noStorage": "추가 스토리지를 사용하지 않습니다.",
+      "cpuOptimal": "CPU 최적",
+      "memoryOptimal": "메모리 최적",
+      "gpuOptimal": "gpu 최적",
+      "balanceType":  "밸런스 타입",
+      "spec": "성능",
+      "cost": "비용",
+      "efficiency": "효율",
+      "securityAutoAssign": "보안그룹 자동할당",
+      "securityManualAssign": "보안그룹 수동 설정"
+    },
+    "fields": {
+      "cloudType": "클라우드 타입",
+      "vmType": "인스턴스 타입",
+      "vCpu": "vCPU (코어)",
+      "memory": "메모리 (GiB)",
+      "region": "리전",
+      "osImage": "OS 이미지",
+      "architecture": "OS (아키텍처)",
+      "storageSize": "스토리지 (GB/유형)",
+      "storage": "스토리지",
+      "paymentOption": "요금 유형",
+      "pricePerUnit": "요금 (USD)",
+      "select": "선택",
+      "OperatePriorities": "운영 우선 순위",
+      "securityGroup": "보안그룹",
+      "visibilityType": "가시성"
+    },
+    "label": {
+      "start": "시작",
+      "type": "유형",
+      "productRecomand": "상품추천",
+      "addSetting": "추가설정",
+      "done": "완료",
+      "vCpu": "vCPU (코어)",
+      "memory": "메모리 (GiB)",
+      "os": "OS 템플릿",
+      "storage": "기본 스토리지 용량",
+      "cloudProdRecommend": "클라우드 상품 추천",
+      "core": "코어",
+      "mem": "메모리",
+      "effective": "요금제",
+      "subnet": "서브넷",
+      "publicIp": "공인 IP",
+      "keypair": "인증키",
+      "securityGroup": "보안그룹",
+      "addStorage": "추가 스토리지",
+      "currentProd": "현재 상품"
+    },
+    "placeholder": {
+      "vCpu": "vCPU(코어)를 선택하세요.",
+      "memory": "메모리(GiB)를 선택하세요.",
+      "os": "OS 템플릿을 선택하세요.",
+      "storage": "스토리지 용량을 선택하세요.",
+      "recommend": "상품 추천 검색"
+    }
+  },
+  "security": {
+    "button": {
+      "csv": "CSV로 내보내기",
+      "delete": "보안그룹 삭제",
+      "inbound": "인바운드",
+      "inboundRule": "인바운드 규칙",
+      "inboundRuleEdit": "인바운드 규칙 편집",
+      "new": "보안그룹 생성",
+      "newRuleReg": "신규 규칙 등록",
+      "outbound": "아웃바운드",
+      "outboundRule": "아웃바운드 규칙",
+      "outboundRuleEdit": "아웃바운드 규칙 편집",
+      "tag": "태그 관리"
+    },
+    "message": {},
+    "placeholder": {
+      "ruleFilter": "보안그룹 규칙 필터",
+      "name": "보안그룹 명을 입력하세요.",
+      "description": "생성하는 보안그룹에 대한 설명을 입력하세요.",
+      "search": "보안그룹 검색"
+    },
+    "table": {
+      "cidrBlock": "소스",
+      "description": "설명",
+      "edit": "편집",
+      "ipVer": "IP 버전",
+      "portRange": "포트 범위",
+      "protocolType": "프로토콜",
+      "secGroupRuleId": "보안그룹 규칙 ID",
+      "source": "소스",
+      "target": "대상",
+      "type": "유형"
+    },
+    "title": {
+      "detail": "보안그룹 상세",
+      "list": "보안그룹 목록",
+      "new": "보안그룹 생성"
+    }
+  },
+  "serverCatalog": {
+    "familyProduct": {},
+    "imageProduct": {},
+    "k8sinstanceProduct": {
+      "title": {
+        "list": "K8S 인스턴스 상품 목록",
+        "detail": "K8S 인스턴스 상품 상세"
+      }
+    },
+    "instanceProduct": {
+      "button": {
+        "new": "서버타입 상품 생성",
+        "delete": "서버타입 상품 삭제",
+        "registerCompany": "기업 상품 공개",
+        "deregisterCompany": "기업 상품 비공개",
+        "download": "엑셀 다운로드",
+        "pricingInfo": {
+          "basicBillingInfo": "기본과금 내역",
+          "upfrontInfo": "선결제 내역"
+        },
+        "instanceTypeAdd": "인스턴스 타입 추가",
+        "osImageAdd": "OS 이미지 추가",
+        "templateProd":"템플릿 상품 추가"
+      },
+      "label": {
+        "companyMappingYn": "상품 공개",
+        "deployedYn": "배포여부",
+        "instanceType": "인스턴스 타입",
+        "instanceTypeName": "인스턴스 타입 명",
+        "faimly": "패밀리",
+        "architecture": "아키텍처",
+        "gpuMemory" :"GPU 메모리",
+        "cloudType": "클라우드 타입",
+        "regionCode": "리전 코드",
+        "isPublic": "퍼블릭 여부",
+        "osImage": "OS 이미지",
+        "osImageName": "OS 이미지 명",
+        "osImageCode": "OS 이미지 코드",
+        "osGroup": "OS 그룹",
+        "description": "설명",
+        "memory": "메모리",
+        "networkPerformance": "네트워크 성능",
+        "visibilityType": "가시성",
+        "operationName": "설치 S/W",
+        "operationSystem": "운영체제",
+        "baseInfo": "기본 정보",
+        "prodName": "상품명",
+        "dataCenter": "데이터 센터",
+        "serviceTarget": "서비스 대상",
+        "effectiveType": "요금제 유형",
+        "priceInfo": "요금 정보",
+        "prodDeploy": "상품 배포",
+        "isDeploy": "배포여부",
+        "prodAll":"상품 합계",
+        "prodCost": "상품 요금",
+        "monthlyFee": "월 정액",
+        "perFee": "시간 당",
+        "effectiveApplyDate": "요금제 반영일",
+        "pricingInfo": {
+          "instanceType": "인스턴스 타입",
+          "os": "운영체제",
+          "contractMonth": "계약 기간",
+          "hourlyCost": "시간당 요금",
+          "offeringClass": "제품 클래스",
+          "effectiveDate": "요금제 적용일",
+          "upfrontInfo": "선결제 정보",
+          "priceUnit": "과금 기준",
+          "pricePerUnit": "기준 별 요금",
+          "currency": "결제 통화",
+          "basicBillingInfo": "기본과금 정보",
+          "registerCompany": "기업 상품 공개",
+          "billingOptions" : "과금 옵션",
+          "effectiveCost" :"유효 요금",
+          "upfrontCost" :"선결제 가격",
+          "description": "설명",
+          "startRange": "시작 범위",
+          "endRange": "종료 범위"
+        },
+        "productName": "인스턴스 상품명",
+        "productSku": "인스턴스 상품 코드",
+        "supportStorage": "스토리지 유형",
+        "tenancy": "테넌시",
+        "vcpu": "vCPU",
+        "vcpuMemory": "vCPU / 메모리"
+      },
+      "message": {
+        "confirmDeregister": "기업 상품을 비공개하시겠습니까?",
+        "confirmRegister": "기업 상품으로 공개하시겠습니까?",
+        "failDeregister": "기업 상품 비공개에 실패했습니다.",
+        "failRegister": "기업 상품 공개에 실패했습니다.",
+        "successDeregister": "기업 상품이 비공개되었습니다.",
+        "successRegister": "기업 상품으로 공개되었습니다.",
+        "prodDeploy": "상품을 배포합니다.",
+        "notProdDeploy": "상품을 배포하지 않습니다."
+      },
+      "placeholder": {
+        "search": "인스턴스 상품 검색",
+        "searchOsImage": "OS 이미지 검색",
+        "createProd": "상품명을 입력하세요.",
+        "createData": "데이터 선터를 입력하세요.",
+        "createService": "서비스 대상을 선택하세요."
+      },
+      "text": {
+        "deploying": "배포중",
+        "deployStopped": "배포중지",
+        "no": "아니오",
+        "yes": "예",
+        "instanceChoose": "인스턴스 타입을 선택하세요.",
+        "osImageChoose": "OS 이미지를 선택하세요."
+      },
+      "title": {
+        "detail": "인스턴스 상품 상세",
+        "list": "인스턴스 상품 목록",
+        "create": "인스턴스 카탈로그 등록",
+        "price": "요금"
+      },
+      "tab": {
+        "osImage": "OS 이미지",
+        "planTime": "시간 요금제",
+        "oneReserve": "1년 예약",
+        "threeReserve": "3년 예약",
+        "priceInfo": "요금 정보"
+      },
+      "fields": {
+        "memory": "메모리"
+      }
+    }
+  },
+  "storageCatalog": {
+    "blockStorageProduct": {
+      "button": {
+        "basicBillingInfo": "기본과금 내역",
+        "delete": "블록 스토리지 상품 삭제",
+        "deregisterCompany": "기업 상품 비공개",
+        "download": "엑셀 다운로드",
+        "new": "블록 스토리지 상품 생성",
+        "registerCompany": "기업 상품 공개"
+      },
+      "label": {
+        "companyMappingYn": "상품공개",
+        "prodComposition": "상품 구성",
+        "applyTarget": "적용대상",
+        "baseInfo": "기본 정보",
+        "currency": "결제 통화",
+        "deployedYn": "배포여부",
+        "discountRate": "할인율",
+        "pricePerUnit": "기준 별 요금",
+        "priceSku": "과금 코드",
+        "effective":"요금제",
+        "effectiveType": "요금제 유형",
+        "effectiveDate": "요금제 적용일",
+        "priceUnit": "과금 기준",
+        "storageName": "스토리지 명",
+        "storageType": "볼륨 타입",
+        "totalPrice": "최종 요금",
+        "description": "설명",
+        "basicBillingInfo": "기본과금 정보",
+        "registerCompany": "기업 상품 공개",
+        "public": "공개",
+        "private": "비공개"
+      },
+      "message": {
+        "confirmDeregister": "기업 상품을 비공개하시겠습니까?",
+        "confirmRegister": "기업 상품으로 공개하시겠습니까?",
+        "failDeregister": "기업 상품 비공개에 실패했습니다.",
+        "failRegister": "기업 상품 공개에 실패했습니다.",
+        "successDeregister": "기업 상품이 비공개되었습니다.",
+        "successRegister": "기업 상품으로 공개되었습니다.",
+        "prodDeploy": "스토리지 상품을 배포합니다.",
+        "notProdDeploy": "스토리지 상품을 배포하지 않습니다."
+      },
+      "placeholder": {
+        "search": "블록 스토리지 상품 검색",
+        "description": "상품 설명을 입력하세요."
+      },
+      "text": {
+        "deploying": "배포중",
+        "deployStopped": "배포중지",
+        "no": "아니오",
+        "yes": "예",
+        "partialUpfront": "부분 선결제",
+        "allUpfront": "전체 선결제",
+        "noUpfront": "선결제 없음"
+      },
+      "title": {
+        "list": "블록 스토리지 상품 목록",
+        "detail": "블록 스토리지 상품 상세",
+        "new": "블록 스토리지 상품 생성",
+        "priceInfo": "요금 정보"
+      },
+      "table":{
+        "applyRequestDate": "요금 반영 요청 예정일",
+        "monthlyFee": "월 정액 요금",
+        "monthlyFee2": "월 정액",
+        "priceUnit": "과금 기준",
+        "perFee": "시간 당 기준 요금",
+        "perFee2": "시간 당 요금",
+        "storageUsage": "스토리지 사용량(과금기준)"
+      }
+    }
+  },
+  "recommendedProduct": {
+    "title": {
+      "total": "합계",
+      "defaultInfo": "기본 정보",
+      "selectedProduct": "상품 정보 선택",
+      "prodConfigOption": "상품 구성 옵션",
+      "prodConfigInfo": "상품 구성 정보",
+      "requestInfo": "요청 정보",
+      "recommendResult": "추천 결과 목록",
+      "productTypeRegister": "상품 종류 등록",
+      "productTypeList": "상품 종류 등록"
+    },
+    "message": {
+      "noSelectedCloudService": "클라우드와 지역을 선택하세요.",
+      "selectedVirtualProcessor": "가상 프로세서를 입력했습니다.",
+      "selectedMemory": "메모리를 입력했습니다.",
+      "selectedGpu": "GPU를 입력했습니다.",
+      "selectedNetwork": "네트워크를 입력했습니다.",
+      "selectedDisk": "디스크를 입력했습니다.",
+      "selectedSpec": "선택한 사양으로 상품을 추천합니다.",
+      "noSelectedSpec": "상품의 사양을 선택하세요. (기본값: all)",
+      "selectedOption": "요청한 vCPU, Memory 크기를 충족하면서 가장 저렴한 상품을 추천합니다.",
+      "noSelectedOption": "상품의 옵션을 선택하세요. (기본값: basic)",
+      "recommendProccess": "상품 구성의 진행 상태",
+      "emptyCloudService": "Cloud Service를 추가해 주세요.",
+      "required": "필수 값을 입력해 주세요.",
+      "confirmRegisterProduct": "선택한 상품만 사용하시겠습니까?",
+      "noSelectedProduct": "선택한 상품이 없습니다",
+      "requiredSelectProduct": "선택한 상품이 없습니다",
+      "disableSelectCloudService": "상품 정보 선택 사용 시 Cloud Service 정보는 입력할 수 없습니다",
+      "configInfo": "구성 정보",
+      "noSelectedCSP": "Cloud와 Region을 선택해 주세요."
+    },
+    "button": {
+      "submit": "상품 추천"
+    }
+  },
+  "subnet": {
+    "button": {
+      "delete": "서브넷 삭제",
+      "new": "서브넷 생성",
+      "route": "라우팅 테이블",
+      "routerTableEdit": "라우터 테이블 편집",
+      "tag": "태그 관리"
+    },
+    "placeholder": {
+      "description": "생성하는 서브넷에 대한 설명을 입력하세요.",
+      "ipv4CidrBlock": "* /16~28 범위 내에서 CIDR 블록을 입력하세요.",
+      "name": "서브넷 명을 입력하세요",
+      "routerSearch": "라우팅 검색",
+      "search": "서브넷 검색"
+    },
+    "table": {
+      "ipAddr": "IP주소",
+      "target": "대상"
+    },
+    "title": {
+      "list": "서브넷 목록",
+      "detail": "서브넷 상세",
+      "new": "서브넷 생성"
+    },
+    "message": {
+      "vpcNotRequired": "해당 클라우드에서는 VPC 선택이 필요하지 않습니다."
+    }
+  },
+  "routing": {
+    "button": {
+      "new": "라우팅 생성",
+      "delete": "라우팅 삭제"
+    },
+    "placeholder": {
+      "search": "라우팅 검색",
+      "routingName": "라우팅 명을 입력하세요.",
+      "region": "리전을 선택하세요.",
+      "vpc": "VPC를 선택하세요.",
+      "routingMethod": "라우팅 방식을 선택하세요."
+    },
+    "table": {},
+    "title": {
+      "new": "라우팅 생성",
+      "detail": "라우팅 상세",
+      "list": "라우팅 목록"
+    }
+  },
+  "tab": {
+    "backupAndRecovery": "백업 & 복원",
+    "connectSubnet": "서브넷 연결",
+    "diskVolume": "디스크 볼륨",
+    "event": "이벤트",
+    "inboundRule": "인바운드 규칙",
+    "monitoring": "모니터링",
+    "outboundRule": "아웃바운드 규칙",
+    "routeTable": "라우팅 테이블 정보",
+    "securityGroup": "보안그룹",
+    "tag": "태그",
+    "workHistory": "작업이력",
+    "subnet": "서브넷",
+    "instance": "인스턴스",
+    "object": "오브젝트"
+  },
+  "validation": {
+    "minLength": "최소 {0}개 이상 선택하세요.",
+    "required": "{field} 항목은 필수 정보입니다.",
+    "validCidrBlock": "CIDR 형식이 아닙니다.",
+    "validIpAddr": "IP형식이 아닙니다.",
+    "validResourceName": "2 ~ 20 자 사이, 첫 글자는 영문만 특수문자는 -_만 입력 가능",
+    "validSubnetCidrRange": "CIDR 범위에 포함되지 않습니다.",
+    "vpcCheckRequired": "해당 클라우드에서 VPC 항목은 필수 정보입니다."
+  },
+  "vpc": {
+    "button": {
+      "delete": "VPC 삭제",
+      "editCidr": "CIDR 편집",
+      "new": "VPC 생성",
+      "tag": "태그 관리"
+    },
+    "message": {},
+    "placeholder": {
+      "ipv4CidrBlock": "10.0.0.0/24",
+      "search": "VPC 검색",
+      "description": "생성하는 VPC에 대한 설명을 입력하세요.",
+      "vpcName": "VPC 명을 입력하세요."
+    },
+    "title": {
+      "detail": "VPC 상세",
+      "list": "VPC 목록",
+      "new": "VPC 생성"
+    }
+  },
+  "solutions": {
+    "portal": "Cloud Portal",
+    "userManagement": "User Management",
+    "forecast": "Forecast",
+    "cost": "Cost",
+    "imp": "Infra Management",
+    "eventHub": "Event Hub",
+    "impCatalog": "Cloud Resource Catalog",
+    "impConfig": "Cloud Configuration Information",
+    "impResource": "Cloud Resource Console",
+    "comp": "Container Console",
+    "devOps": "DevOps",
+    "monitoring": "Integrated Monitor",
+    "msa": "MSA Management",
+    "sr": "SR",
+    "apiMapper": "API Mapper",
+    "catalogDeploy": "Software Catalog",
+    "openApi": "Open API Management",
+    "openApiUser": "Open API Management User"
+  },
+  "authGroupRole": {
+    "title": {
+      "list": "권한그룹 및 롤 목록",
+      "select": "권한그룹",
+      "adminPortalAuthGroup":"관리자 포탈 권한 그룹",
+      "authManage": "권한 관리"
+    },
+    "button": {
+      "authGroupReg": "권한그룹 등록"
+    },
+    "radio": {
+      "read": "조회",
+      "write": "수정",
+      "noAuth": "권한없음"
+    }
+  },
+  "objectStorage": {
+    "title": {
+      "bucketList": "버킷 목록",
+      "bucketNew": "버킷 생성",
+      "bucketDetail": "버킷 상세",
+      "accessKeyNew": "액세스 키 생성",
+      "accessKeyList": "액세스 키 목록",
+      "keyInfo": "Key 정보"
+
+    },
+    "button": {
+      "newAccessKey": "액세스 키 생성",
+      "newBucket": "버킷 생성",
+      "deleteAccessKey": "액세스 키 삭제",
+      "deleteBucket": "버킷 삭제",
+      "editAccessKey": "액세스 키 편집",
+      "editBucket": "버킷 편집"
+    },
+    "placeholder": {
+      "bucketName": "버킷 명을 입력해 주세요.",
+      "bucketSearch": "버킷 검색",
+      "accessKeySearch": "액세스 키 검색"
+    },
+    "message": {
+      "keyInfo_1": "Secret Key는 포털에서 다시 확인할 수 없습니다.",
+      "keyInfo_2": "안전한 곳에 저장하여 보관하시기 바랍니다.",
+      "keyInfo_3": "보안 유지를 위해 안전하게 보관하고 다른 사람과 공유하지 마십시오."
+    }
+  }
+}

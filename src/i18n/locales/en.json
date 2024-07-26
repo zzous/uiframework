@@ -1,0 +1,832 @@
+{
+  "blockStorage": {
+    "blockStorage": {
+      "button": {
+        "connectInstance": "Connect Instance",
+        "createSnapshot": "Create Snapshot",
+        "delete": "Delete Block Storage",
+        "disconnectInstance": "Disconnect Instance",
+        "new": "Create Block Storage",
+        "recoverSnapshot": "Snapshot Recovery"
+      },
+      "label": {
+        "blockStorageName": "Block Storage Name",
+        "connectInstanceNameId": "Connected Instance Name / ID",
+        "iops": "IOPS (Max)",
+        "storageType": "Volume Type",
+        "volumeSize": "Volume Size"
+      },
+      "placeholder": {
+        "blockStorageName": "블록 스토리지 명을 입력하세요 (en)",
+        "search": "Search Block Storage",
+        "snapshotDescription": "스냅샷 설명을 입력하세요. (알파벳과 숫자, 특수문자만 입력 가능합니다.) (en)",
+        "snapshotName": "스냅샷 명을 입력하세요. (en)",
+        "volumeSize": "볼륨 용량을 입력하세요 (GB) (en)"
+      },
+      "table": {
+        "available": "Available",
+        "description": "Description",
+        "inUse": "In Use",
+        "snapshotName": "Snapshot Name"
+      },
+      "title": {
+        "list": "Block Storage",
+        "new": "Create Block Storage"
+      }
+    },
+    "snapshot": {}
+  },
+  "button": {
+    "add": "Add",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "create": "Create",
+    "delete": "Delete",
+    "edit": "Edit",
+    "go": "Go",
+    "login": "Login",
+    "next": "Next",
+    "ok": "OK",
+    "prev": "Prev",
+    "reset": "Reset",
+    "save": "Save",
+    "signup": "Sign Up",
+    "use": "Use",
+    "notUse": "Not Use",
+    "register": "Register",
+    "search": "Search"
+  },
+  "cloudConfig": {
+    "alertMessage": {
+      "regist": {
+        "success": "The registration to the catalog is complete.",
+        "fail": "The registration to the catalog has failed."
+      },
+      "delete": {
+        "success": "The deletion from the catalog is complete..",
+        "fail": "The deletion from the catalog has failed."
+      }
+    },
+    "button": {
+      "regist": "Catalog Target Apply",
+      "delete": "Catalog Target Delete"
+    },
+    "blockStorageType": {
+      "fields": {
+        "code": "Type Code",
+        "maxIops": "Max IOPS",
+        "maxSize": "Volume Size",
+        "maxThroughput": "Max Throughput",
+        "name": "Volume Name",
+        "storageMedia": "Volume Type"
+      },
+      "title": "Volume Type"
+    },
+    "fields": {
+      "_comment": "클라우드 구성 공통 항목 (en)",
+      "cloudType": "Cloud Type",
+      "syncType": "동기화 방식 (en)",
+      "publicCloudYn": "퍼블릭 여부 (en)",
+      "region": "Region",
+      "regionCode": "리전 코드 (en)",
+      "syncedAt": "동기화 일시 (en)",
+      "productTargetYn": "Product Target Status"
+    },
+    "instanceType": {
+      "fields": {
+        "architectures": "Architecture",
+        "code": "인스턴스 타입 코드 (en)",
+        "family": "Family",
+        "gpuMemory": "GPU Memory",
+        "memory": "Memory",
+        "name": "Instance Type Name",
+        "vcpu": "vCPU"
+      },
+      "title": "Instance Type"
+    },
+    "k8sVersion": {
+      "fields": {
+        "code": "K8s version",
+        "name": "K8s Name"
+      },
+      "title": "K8s Version"
+    },
+    "k8sImage": {
+      "fields": {
+        "architecture": "Architecture",
+        "code": "K8s code",
+        "name": "K8s name",
+        "osType": "OS Type"
+      },
+      "title": "K8s Image"
+    },
+    "osImage": {
+      "fields": {
+        "architecture": "Architecture",
+        "code": "이미지 타입 코드 (en)",
+        "description": "Description",
+        "name": "OS Image Name",
+        "osType": "OS"
+      },
+      "title": "OS Image"
+    },
+    "region": {
+      "fields": {},
+      "title": "Region"
+    },
+    "cluster":{
+      "fields": {
+
+      },
+      "title": "Cluster",
+      "placeholder": {
+        "search" : "Search Cluster"
+      }
+    },
+    "text": {
+      "auto": "Auto",
+      "manual": "Menual",
+      "no": "No",
+      "yes": "Yes"
+    },
+    "title": "클라우드 구성 (en)",
+    "zone": {
+      "fields": {
+        "code": "존 타입 코드 (en)",
+        "name": "Zone Name"
+      },
+      "title": "Zone"
+    }
+  },
+  "code": "en",
+  "common": {
+    "discirbe": {
+      "tagKey": "* 태그 키를 지정하세요. (en)",
+      "tagValue": "(선택) 태그 값을 입력하세요. (en)"
+    },
+    "message": {
+      "confirmCancel": "작성 중이던 데이터가 사라집니다. 계속하시겠습니까? (en)",
+      "confirmDelete": "정말로 삭제하시겠습니까? (en)",
+      "failCopy": "복사하지 못했습니다. (en)",
+      "failCreate": "생성하지 못했습니다.",
+      "failDelete": "삭제하지 못했습니다. (en)",
+      "failSnapshot": "스냅샷 생성을 실패하였습니다. (en)",
+      "lastUpdate": "마지막 업데이트 (en)",
+      "noData": "데이터가 존재하지 않습니다. (en)",
+      "snapshotHelper": "* 스냅샷 설명은 선택사항 입니다. (en)",
+      "successCopy": "복사되었습니다. (en)",
+      "successCreate": "생성되었습니다.",
+      "successDelete": "삭제되었습니다. (en)",
+      "successSnapshot": "스냅샷을 생성하였습니다. (en)",
+      "tagHelper": "리소스 검색과 필터링에 사용합니다. 키와 값으로 설정됩니다. (en)",
+      "volumeSizeHelper": "* 최소 10 GB, 최대 1000 GB 까지 입력할 수 있습니다. (en)"
+    },
+    "placeholder": {
+      "cloudType": "클라우드 타입을 선택하세요. (en)",
+      "region": "리전을 선택하세요. (en)",
+      "serviceGroup": "테넌트를 선택하세요. (en)",
+      "subnet": "서브넷을 선택하세요. (en)",
+      "publicIp": "공인 IP를 선택하세요. (en)",
+      "keypair": "인증키를 선택하세요. (en)",
+      "securityGroup": "보안그룹을 선택하세요. (en)",
+      "tagKey": "Key",
+      "tagValue": "Value",
+      "tagSearch": "태그 검색 (en)"
+    }
+  },
+  "dashboard": {
+    "label": {
+      "alarm": "Alarm",
+      "all": "ALL",
+      "avg": "Avg",
+      "blockStorage": "Block Storage",
+      "danger": "Danger",
+      "disk": "Disk",
+      "diskCapacity": "Disk Capacity",
+      "diskLatency": "Disk Latency",
+      "emergency": "Emerg",
+      "error": "Error",
+      "etc": "etc",
+      "gpuMemoryUsage": "GPU Memory Usage",
+      "gpuUsage": "GPU Usage",
+      "instanceCnt": "Number of Instances",
+      "max": "Max",
+      "memory": "Memory",
+      "memoryCapacity": "Memory Capacity",
+      "min": "Min",
+      "nasStorage": "NAS Storage",
+      "networkIn": "Network-In",
+      "objectCount": "Number of Objects",
+      "objectStorage": "Object Storage",
+      "powerOff": "Power OFF",
+      "powerOn": "Power On",
+      "publicIpCnt": "Number of Public IPs",
+      "subnetCnt": "Number of Subnets",
+      "temperature": "TEMP",
+      "vCPU": "vCPU",
+      "vcpuCnt": "Number of vCPUs",
+      "vpcCnt": "Number of VPCs",
+      "warning": "Warn",
+      "watt": "Power(W)"
+    },
+    "title": {
+      "cloudType": "클라우드 타입 (en)",
+      "diskStatus": "디스크 현황 (en)",
+      "eventError": "이벤트/장애 현황 (en)",
+      "faq": "FAQ",
+      "gpuMemory": "GPU / 메모리 현황 (en)",
+      "instanceSpec": "인스턴스 성능 지표 평균 값 (en)",
+      "instanceStatus": "인스턴스 상태 (en)",
+      "instanceType": "인스턴스 타입 (en)",
+      "list": "서비스/자원 이용현황 (en)",
+      "memoryUsage": "메모리 사용량 (en)",
+      "networkStatus": "네트워크 현황 (en)",
+      "notice": "Notice",
+      "resourceStatus": "자원 현황 (en)",
+      "serviceStatus": "서비스 신청 현황 (en)",
+      "storageUsage": "스토리지 사용량 (en)",
+      "vCpuUsage": "vCPU 사용량 (en)",
+      "vpcSubnetStatus": "VPC / 서브넷 현황 (en)"
+    }
+  },
+  "deploymentCatalog": {
+    "deploymentImageProduct": {}
+  },
+  "fields": {
+    "accountId": "Account",
+    "basedNetworkACL": "Default Network ACL",
+    "basedRouteTable": "Default Routing Table",
+    "basedSubent": "Default Subnet",
+    "basedVPC": "Default VPC",
+    "blockStorageId": "Block Storage ID",
+    "blockStorageName": "Block Storage Name",
+    "charge": "Charge",
+    "checkDnsHost": "DNS Check",
+    "cloudType": "Cloud Type",
+    "companyName": "Company Name",
+    "confirmPassword": "Confirm password",
+    "connectInstanceNameId": "Connected Instance Name / ID",
+    "connectInstanceSelect": "Select Connect Instance",
+    "connectionState": "Connection Health",
+    "connectTo": "Connect to",
+    "contact": "Contact",
+    "cpu": "CPU(Core)",
+    "createdAt": "Created At",
+    "cidrBlock": "Source",
+    "defaultYn": "Default",
+    "department": "Department",
+    "deploymentYn": "Deployment",
+    "description": "Description",
+    "device": "device",
+    "dnsHost": "DNS Host",
+    "editableYn": "edit",
+    "email": "E-Mail",
+    "employeeId": "Employee Id",
+    "enabled": "Enabled",
+    "firstName": "First Name",
+    "fromPort": "From port",
+    "inboundCount": "Number of Inbounds",
+    "inboundRule": "Inbound Rule",
+    "instanceId": "Instance ID",
+    "instanceName": "Instance Name",
+    "instanceType": "Instance Type",
+    "ipType": "IP Type",
+    "ipv4Cidr": "IPv4 CIDR",
+    "ipv4CidrBlock": "IPv4 CIDR Block",
+    "autoPublicIp": "Auto-assign Public IP",
+    "Ipv4Count": "Number of IPv4 IPs",
+    "ipVersion": "IP version",
+    "keyFormat": "Key file format",
+    "keyName": "Key Pair Name",
+    "keyPair": "Key Pair",
+    "keyPairId": "Key Pair ID",
+    "keyPairStatus": "Key Pair Status",
+    "keyType": "Key Type",
+    "language": "Language",
+    "lastName": "Last Name",
+    "maxIops": "IOPS (Max)",
+    "memory": "Memory(GB)",
+    "networkAcl": "Default Network ACL",
+    "networkACL": "Network ACL",
+    "networkAclId": "Network ACL ID",
+    "networkAclName": "Network ACL Name",
+    "networkInterface": "Network Interface Name / ID",
+    "networkInterfaceId": "Network Interface ID",
+    "networkInterfaceName": "Network Interface Name",
+    "organization": "Organization",
+    "osImage": "OS",
+    "outboundCount": "Number of Outbounds",
+    "outboundRule": "Outbound Rule",
+    "ownerId": "Owner",
+    "password": "password",
+    "portRange": "Port Range",
+    "position": "Position",
+    "priceUnit": "Price Unit",
+    "privateIpAddress": "Private IP",
+    "productRelease": "Release",
+    "productRole": "Product Role",
+    "protocolType": "Protocol",
+    "protocolTypeName": "Protocol Name",
+    "publicIp": "Public IP",
+    "publicIpName": "Public IP Name",
+    "rank": "Rank",
+    "region": "Region",
+    "ruleAction": "Allow/Deny",
+    "ruleNum": "Rule Number",
+    "ruleType": "Type",
+    "ruleTypeName": "Type",
+    "secGroupID": "Security Group ID",
+    "securityDescription": "Security Group Description",
+    "securityGroup": "Security Group",
+    "securityGroupName": "Security Group Name",
+    "securityGroupNameId": "Security Group Name / ID",
+    "securityGroupRuleIdx": "Security Group Rule ID",
+    "serviceGroup": "Tenant",
+    "snapshotDescription": "Snapshot Description",
+    "snapshotName": "Snapshot Name",
+    "snapshotNameId": "Snapshot Name / ID",
+    "status": "Status",
+    "storageProduct": "Storage Product",
+    "subnet": "Subnet",
+    "subnetDiscribe": "Subnet Description",
+    "subnetId": "Subnet ID",
+    "subnetName": "Subnet Name",
+    "subnetNameId": "Subnet Name / ID",
+    "tag": "Tag",
+    "team": "Team",
+    "template": "Template",
+    "toPort": "To port",
+    "type": "Type",
+    "userId": "User ID",
+    "username": "User Name",
+    "usernameEn": "User Name(En)",
+    "usernameKr": "User Name(Kr)",
+    "vcpu": "vCPU(Core)",
+    "vmId": "Connected Instance",
+    "volSize": "Volume Size",
+    "volumeName": "Volume Name",
+    "volumeSize": "Size",
+    "maxVolumeSize": "Maximum Volume Size",
+    "volumeType": "Volume Type",
+    "vpc": "VPC",
+    "vpcId": "VPC ID",
+    "vpcName": "VPC Name",
+    "vpcNameId": "VPC Name / ID",
+    "vpcSelect": "Select VPC",
+    "zone": "Zone"
+  },
+  "groupTemplateCatalog": {
+    "instanceConfigurationProduct": {},
+    "k8sConfigurationProduct": {}
+  },
+  "instance": {
+    "button": {
+      "connectNetworkInterface": "네트워크 인터페이스 연결 (en)",
+      "connectPublicIp": "공인 IP 연결 (en)",
+      "deleteInstance": "인스턴스 삭제 (en)",
+      "disconnectNetworkInterface": "네트워크 인터페이스 분리 (en)",
+      "disconnectPublicIp": "공인 IP 연결해제 (en)",
+      "edit": "인스턴스 관리 (en)",
+      "image": "인스턴스 이미지 관리 (en)",
+      "networkInterface": "네트워크 인터페이스 관리 (en)",
+      "new": "Create Instance",
+      "newImage": "인스턴스 이미지 생성 (en)",
+      "newInstance": "인스턴스 생성 (en)",
+      "newSnapshot": "스냅샷 생성 (en)",
+      "publicIp": "공인 IP 관리 (en)",
+      "rebootInstance": "인스턴스 재부팅 (en)",
+      "restoreImage": "인스턴스 이미지 복원 (en)",
+      "restoreSnapshot": "스냅샷 복원 (en)",
+      "runInstance": "인스턴스 시작 (en)",
+      "securityGroup": "보안 그룹 설정 (en)",
+      "snapshot": "스냅샷 관리 (en)",
+      "stopInstance": "인스턴스 중지 (en)"
+    },
+    "placeholder": {
+      "search": "Search Instance"
+    },
+    "title": {
+      "configInstance": "Config Instance",
+      "configNetworkSecurity": "Config Network & Security",
+      "configStorage": "Config Storage",
+      "list": "Instance",
+      "selectServiceGroup": "Select Tenant",
+      "serviceGroup": "Tenant"
+    }
+  },
+  "keypair": {
+    "button": {
+      "delete": "Delete Key Pair",
+      "down": "Download Key",
+      "new": "Create Key Pair"
+    },
+    "placeholder": {
+      "search": "Search Key Pair"
+    },
+    "title": {
+      "list": "Key Pair",
+      "new": "Create Key Pair"
+    }
+  },
+  "langs": {
+    "en": "English",
+    "ko": "한국어"
+  },
+  "language": "English",
+  "menu": {},
+  "myInfo": {
+    "message": {
+      "failedEditUserInfo": "사용자 정보를 수정하지 못하였습니다. (en)",
+      "failedNewUserInfo": "사용자 정보를 등록하지 못하였습니다. (en)",
+      "successedEditUserInfo": "사용자 정보를 수정하였습니다. (en)",
+      "successedNewUserInfo": "사용자 등록을 완료하였습니다. (en)"
+    },
+    "productRole": "Product Role",
+    "shortTitle": "My Info",
+    "title": "My Information"
+  },
+  "networkAcl": {
+    "button": {
+      "connectSubnet": "Connect Subnet",
+      "delete": "Delete Network ACL",
+      "edit": "Edit",
+      "inboundRule": "Inbouhnd Rule",
+      "new": "네트워크 ACL 생성 (en)",
+      "newRuleReg": "신규 규칙 등록 (en)",
+      "outboundRule": "Outbound Rule",
+      "tag": "태그 관리 (en)"
+    },
+    "placeholder": {
+      "description": "생성하는 네트워크 ACL에 대한 설명을 입력하세요. (en)",
+      "inboundRuleFilter": "인바운드 규칙 필터 (en)",
+      "ipv4CidrBlock": "10.0.0.0/24 (en)",
+      "name": "네트워크 ACL 명을 입력하세요 (en)",
+      "outboundRuleFilter": "아웃바운드 규칙 필터 (en)",
+      "search": "네트워크 ACL 검색 (en)"
+    },
+    "table": {
+      "permissionEntry": "Permission Entry",
+      "portRange": "Port Range",
+      "protocolType": "Protocol",
+      "ruleAction": "Allow/Deny",
+      "ruleNum": "Rule Number",
+      "ruleType": "Type",
+      "source": "Source",
+      "subnet": "Subnet"
+    },
+    "title": {
+      "list": "Network ACL",
+      "new": "Create Network ACL"
+    }
+  },
+  "networkCatalog": {
+    "k8sProduct": {},
+    "publicIpProduct": {}
+  },
+  "networkInterface": {
+    "button": {
+      "connectInstance": "Connect Instance",
+      "delete": "Delete Network Interface",
+      "disconnectInstance": "Disconnect Instance",
+      "new": "Create Network Interface"
+    },
+    "title": {
+      "list": "Network Interface",
+      "new": "Create Network Interface"
+    }
+  },
+  "publicIp": {
+    "button": {
+      "connect": "Connect Instance",
+      "delete": "Delete Public IP",
+      "disconnect": "Disconnect Instance",
+      "new": "Create Public IP"
+    },
+    "placeholder": {
+      "search": "Search Public IP"
+    },
+    "title": {
+      "list": "Public IP",
+      "new": "Create Public IP"
+    }
+  },
+  "resourceConfig": {
+    "button": {
+      "addConfigBox": "구성함 추가 (en)",
+      "addStorage": "스토리지 추가 (en)",
+      "createKeyPair": "인증키 생성 (en)",
+      "createResource": "자원 생성 (en)",
+      "createSubnet": "서브넷 생성 (en)",
+      "refresh": "Refresh"
+    },
+    "label": {
+      "addtionalStorage": "추가 스토리지",
+      "baseStorage": "default Volume",
+      "billingTotal": "합계 요금 (en)",
+      "billingType": "과금방식(요금제) (en)",
+      "configIp": "IP Config"
+    },
+    "message": {
+      "billingTotal_1": "구성하신 상품 기준으로 월간 비용에 대한 예측 비용입니다. (en)",
+      "billingTotal_2": "네트워크 트래픽에 대한 비용은 제외되어 있습니다. (en)",
+      "billingTotal_3": "위 자원 구성 내역으로 자원을 생성합니다. (en)",
+      "confirmDeleteInstance": "선택한 인스턴스를 정말로 삭제하시겠습니까? (en)",
+      "doCreateSubnet": "서브넷이 없을 경우, 서브넷 생성 후 진행하세요. (en)",
+      "failCreate": "자원 생성을 요청하지 못하였습니다. (en)",
+      "inputInstanceName": "인스턴스 명을 입력하세요. (en)",
+      "publicIpHelp": "공인IP 를 사용할 경우, IP는 자동으로 할당됩니다. (en)",
+      "selectBilingType": "인스턴스 운영에 필요한 과금방식(요금제)을 선택하세요. (en)",
+      "selectCloudProvider": "클라우드 서비스 제공자를 선택하세요. (en)",
+      "selectKeyPair": "인증키를 선택하세요. *인증키가 없을 경우, 인증키 생성 후 진행하세요. (en)",
+      "selectPublicIp": "공인 IP 사용 여부를 선택하세요. (en)",
+      "selectRegion": "클라우드를 사용하는 리전(지역) 을 선택하세요. (en)",
+      "selectSecurityGroup": "보안 규칙이 적용되어 있는 보안그룹을 선택하세요. (en)",
+      "selectServerSpec": "vCPU, Memory, GPU 등 서버의 사양을 선택하세요. (en)",
+      "selectStorageSpec": "스토리지의 타입 선택 후 용량을 입력하십시오. (en)",
+      "selectStorageType": "스토리지는 SSD 와 HDD 타입으로 준비되어 있습니다. (en)",
+      "selectSubnet": "서브넷을 선택하세요. (en)",
+      "selectTemplate": "인스턴스 시작에 필요한 운영체제와 소프트웨어, 어플리케이션이 포함된 템플릿을 선택하세요 (en).",
+      "successCreate": "자원 생성을 요청하였습니다. (en)",
+      "updateKeyPair": "인증키가 조회되지 않을 경우, 업데이트 버튼으로 목록을 갱신하십시오. (en)",
+      "updateSubnet": "서브넷이 조회되지 않을 경우, 업데이트 버튼으로 목록을 갱신하십시오. (en)"
+    },
+    "title": {
+      "main": "클라우드 자원 구성 마법사",
+      "summary": "자원 구성 현황"
+    }
+  },
+  "security": {
+    "button": {
+      "csv": "CSV로 내보내기 (en)",
+      "delete": "보안 그룹 삭제 (en)",
+      "inbound": "인바운드 (en)",
+      "inboundRule": "인바운드 규칙 (en)",
+      "inboundRuleEdit": "인바운드 규칙 편집 (en)",
+      "new": "보안 그룹 생성 (en)",
+      "newRuleReg": "신규 규칙 등록 (en)",
+      "outbound": "아웃바운드 (en)",
+      "outboundRule": "아웃바운드 규칙 (en)",
+      "outboundRuleEdit": "아웃바운드 규칙 편집 (en)",
+      "tag": "태그 관리 (en)"
+    },
+    "message": {},
+    "placeholder": {
+      "ruleFilter": "보안 그룹 규칙 필터 (en)",
+      "search": "Search Security Group"
+    },
+    "table": {
+      "cidrBlock": "Source",
+      "description": "Description",
+      "edit": "Edit",
+      "ipVer": "IP version",
+      "portRange": "Port Range",
+      "protocolType": "Protocol",
+      "secGroupRuleId": "Security Group Rule ID",
+      "source": "Source",
+      "target": "Target",
+      "type": "Type"
+    },
+    "title": {
+      "detail": "Security Group Details",
+      "list": "Security Group",
+      "new": "Create Security Group"
+    }
+  },
+  "serverCatalog": {
+    "familyProduct": {},
+    "imageProduct": {},
+    "instanceProduct": {
+      "button": {
+        "delete": "인스턴스 상품 삭제 (en)",
+        "deregisterCompany": "기업 상품 비공개 (en)",
+        "download": "Excel download",
+        "new": "인스턴스 상품 생성 (en)",
+        "pricingInfo": {
+          "basicBillingInfo": "기본과금 내역 (en)",
+          "upfrontInfo": "선결제 내역 (en)"
+        },
+        "registerCompany": "기업 상품 공개 (en)"
+      },
+      "label": {
+        "companyMappingYn": "상품 공개 (en)",
+        "deployedYn": "Deployment",
+        "instanceType": "Instance Type",
+        "memory": "Memory",
+        "networkPerformance": "Network Performance",
+        "operationName": "Operation S/W",
+        "operationSystem": "Ooperation System",
+        "pricingInfo": {
+          "instanceType": "인스턴스 타입 (en)",
+          "os": "운영체제 (en)",
+          "hourlyCost": "시간당 요금 (en)",
+          "offeringClass": "제품 클래스 (en)",
+          "effectiveDate": "요금제 적용일 (en)",
+          "upfrontInfo": "선결제 정보 (en)",
+          "basicBillingInfo": "기본과금 정보 (en)",
+          "registerCompany": "기업 상품 공개 (en)"
+        },
+        "productName": "Instance Product Name",
+        "productSku": "sku",
+        "supportStorage": "Volume Type",
+        "tenancy": "Tenancy",
+        "vcpu": "vCPU",
+        "vcpuMemory": "vCPU / Memory"
+      },
+      "message": {
+        "confirmDeregister": "기업 상품을 비공개하시겠습니까? (en)",
+        "confirmRegister": "기업 상품으로 공개하시겠습니까? (en)",
+        "failDeregister": "기업 상품 비공개에 실패했습니다. (en)",
+        "failRegister": "기업 상품 공개에 실패했습니다. (en)",
+        "successDeregister": "기업 상품이 비공개되었습니다. (en)",
+        "successRegister": "기업 상품으로 공개되었습니다. (en)"
+      },
+      "placeholder": {},
+      "text": {
+        "deploying": "Deploying",
+        "deployStopped": "Stopped",
+        "no": "No",
+        "yes": "Yes"
+      },
+      "title": {
+        "detail": "인스턴스 상품 상세 (en)",
+        "list": "인스턴스 상품 (en)"
+      },
+      "tab": {
+        "osImage": "OS 이미지 (en)",
+        "planTime": "시간 요금제 (en)",
+        "oneReserve": "1년 예약 (en)",
+        "threeReserve": "3년 예약 (en)"
+      },
+      "fields": {
+        "memory": "Memory"
+      }
+    }
+  },
+  "storageCatalog": {
+    "blockStorageProduct": {
+      "button": {
+        "basicBillingInfo": "기본과금 내역 (en)",
+        "delete": "블록 스토리지 상품 삭제 (en)",
+        "deregisterCompany": "기업 상품 비공개 (en)",
+        "download": "엑셀 다운로드 (en)",
+        "new": "블록 스토리지 상품 생성 (en)",
+        "registerCompany": "기업 상품 공개 (en)"
+      },
+      "label": {
+        "companyMappingYn": "상품공개 (en)",
+        "currency": "Currency",
+        "deployedYn": "배포여부 (en)",
+        "pricePerUnit": "기준 별 요금 (en)",
+        "priceSku": "과금 코드 (en)",
+        "priceUnit": "과금 기준 (en)",
+        "storageName": "Volume Name",
+        "storageType": "Volume Type"
+      },
+      "message": {
+        "confirmDeregister": "기업 상품을 비공개하시겠습니까? (en)",
+        "confirmRegister": "기업 상품으로 공개하시겠습니까? (en)",
+        "failDeregister": "기업 상품 비공개에 실패했습니다. (en)",
+        "failRegister": "기업 상품 공개에 실패했습니다. (en)",
+        "successDeregister": "기업 상품이 비공개되었습니다. (en)",
+        "successRegister": "기업 상품으로 공개되었습니다. (en)"
+      },
+      "placeholder": {
+        "search": "블록 스토리지 상품 검색 (en)"
+      },
+      "text": {
+        "deploying": "배포중 (en)",
+        "deployStopped": "배포중지 (en)",
+        "no": "No",
+        "yes": "Yes"
+      },
+      "title": {
+        "list": "블록 스토리지 상품 (en)",
+        "new": "블록 스토리지 상품 생성 (en)",
+        "priceInfo": "요금 정보 (en)"
+      }
+    }
+  },
+  "recommendedProduct": {
+    "title": {
+      "total": "Total",
+      "defaultInfo": "Default Info",
+      "selectedProduct": "Selected Product",
+      "prodConfigOption": "Product Config Option",
+      "prodConfigInfo": "Product Config Info"
+    },
+    "message": {
+      "noSelectedCloudService": "Please select cloud type and region.",
+      "selectedVirtualProcessor": "Entered the number of virtual processors.",
+      "selectedMemory": "Entered the number of memory.",
+      "selectedDisk": "Entered the number of disk.",
+      "selectedSpec": "Recommend the product using this specification.",
+      "noSelectedSpec": "Select the specification of the product. (Default: all)",
+      "selectedOption": "상품을 사용하여 요청한 vCPU, Memory 크기를 충족하면서 가장 저렴한 상품을 추천합니다.",
+      "noSelectedOption": "Select the option of the product. (Default: basic)",
+      "recommendProccess": "Progress of product composition",
+      "emptyCloudService": "Please select Cloud Service.",
+      "required": "Please enter required values.",
+      "confirmRegisterProduct": "Would you like to use only the selected items?"
+    },
+    "button": {
+      "submit": "Recommend"
+    }
+  },
+  "subnet": {
+    "button": {
+      "delete": "Delete Subent",
+      "new": "Create Subnet",
+      "route": "Routing Table",
+      "routerTableEdit": "라우터 테이블 편집 (en)",
+      "tag": "태그 관리 (en)"
+    },
+    "placeholder": {
+      "description": "생성하는 서브넷에 대한 설명을 입력하세요. (en)",
+      "ipv4CidrBlock": "* /16~28 범위 내에서 CIDR 블록을 입력하세요. (en)",
+      "name": "서브넷 명을 입력하세요 (en)",
+      "routerSearch": "라우팅 검색 (en)",
+      "search": "서브넷 검색 (en)"
+    },
+    "table": {
+      "ipAddr": "IP Address",
+      "target": "Target"
+    },
+    "title": {
+      "list": "Subnet",
+      "new": "Create Subnet"
+    }
+  },
+  "tab": {
+    "backupAndRecovery": "Backup & Recovery",
+    "connectSubnet": "Connect Subnet",
+    "diskVolume": "Disk Volume",
+    "event": "Event",
+    "inboundRule": "Inbound Rule",
+    "monitoring": "Monitoring",
+    "outboundRule": "Outbound Rule",
+    "routeTable": "Routing Table Info",
+    "securityGroup": "Security Group",
+    "tag": "Tag",
+    "workHistory": "Work History"
+  },
+  "validation": {
+    "minLength": "최소 {0}개 이상 선택하세요. (en)",
+    "required": "{field} is required.",
+    "validCidrBlock": "CIDR Block 형식이 아닙니다. (en)",
+    "validIpAddr": "IP 형식이 아닙니다. (en)",
+    "validResourceName": "2 ~ 20 자 사이, 첫 글자는 영문만 특수문자는 -_만 입력 가능 (en)",
+    "validSubnetCidrRange": "CIDR 범위에 포함되지 않습니다. (en)",
+    "validDescription": "설명은 255자를 초과할 수 없습니다. (en)"
+  },
+  "vpc": {
+    "button": {
+      "delete": "Delete VPC",
+      "editCidr": "CIDR 편집 (en)",
+      "new": "Create VPC",
+      "tag": "태그 관리 (en)"
+    },
+    "message": {},
+    "placeholder": {
+      "ipv4CidrBlock": "e.g. 10.0.0.0/24",
+      "search": "Search VPC",
+      "vpcDescription": "생성하는 VPC에 대한 설명을 입력하세요. (en)",
+      "vpcName": "VPC 명을 입력하세요. (en)"
+    },
+    "title": {
+      "detail": "VPC details",
+      "list": "VPC",
+      "new": "Create VPC"
+    }
+  },
+  "solutions": {
+    "portal": "Cloud Portal",
+    "userManagement": "User Management",
+    "imp": "Infra Management",
+    "comp": "Container Management",
+    "devOps": "DevOps",
+    "monitoring": "Monitoring",
+    "msa": "MSA Management",
+    "sr": "SR",
+    "apiMapper": "API Mapper",
+    "catalogDeploy": "Catalog Deploy",
+    "openApi": "Open API Management",
+    "openApiUser": "Open API Management User"
+  },
+  "authGroupRole": {
+    "title": {
+      "list": "Auth Group & Role",
+      "select": "Auth Group",
+      "adminPortalAuthGroup":"Admin Portal Auth Group",
+      "authManage": "Authorication Management"
+    },
+    "button": {
+      "authGroupReg": "New Auth Group"
+    },
+    "radio": {
+      "read": "Read",
+      "write": "Write",
+      "noAuth": "Access Deny"
+    }
+  }
+}
