@@ -19,10 +19,10 @@
   {{ item.sampleCodeJS }}
   </code>
   </pre>
-        </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
 <script setup>
 import { reactive } from 'vue';
 const props = defineProps({ title: String });

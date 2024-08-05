@@ -1,168 +1,47 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url('@/styles/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  src: url('@/styles/fonts/NotoSansKR-VariableFont_wght.ttf') format('truetype');
-  font-style: normal;
-  font-display: swap;
-}
-$body-font-family:'Montserrat', 'Noto Sans KR', sans-serif;
-$basic-font: 'Noto Sans KR', 'Montserrat', sans-serif;
-$sub-font: 'Montserrat', 'Noto Sans KR', sans-serif;
-
-$material-light: ('background': #F5F7F8);
-$info-color: 'blue-grey darken-4';
-$normal-color: 'cyan lighten-2';
-$warning-color: 'yellow';
-$major-color: 'orange darken-2';
-$critical-color: 'red darken-1';
 
 
-$gnb-left: #344A63;
-$lnb-left: #5B62AD;
-$lnb-right: #2A4058;
-$color-info: #4E4B66;
-$color-normal: #00B8D5;
-$color-warning: #F4B740;
-$color-major: #F49440;
-$color-critical: #ED2E7E;
-$color-azure: #ff8787;
-$color-private: #ba61cf;
-$color-violet: #920783;
-$basic-green: #29AA54;
-$basic-red: #B80303;
-$table-grid: #FBFBFB;
-$basic-blue: #0078FF;
-$basic-lemon: #FEFEFC;
-$basic-purple: #4E4B66;
-$basic-yellow: #FFCD56;
-$basic-button: #5B6C82;
-$basic-dark-button: #8C8E9B;
-$input-border: #CFD2D8;
-$input-bgcolor: #fafbfd;
-$box-border: #DBDFE1;
-$secondary: #00B8D5;
-$dark-navy: #125A90;
-$nav-primary: #5B62AD;
-$title-color: #2A4058;
-$sub-title: #4B5566;
-$box-bgcolor: #F5F8FB;
-$box-text: #2A2A2A;
-// $basic-bgcolor: #F5F7F8;
-$basic-bgcolor: white;
-$basic-sky-blue: #06ABEA;
-$secondary-opacity: rgb(136, 131, 206,
-0.4);
-$admin-dashbord: #181D36;
-$admin-dashbord-card: #1f2841;
-$admin-unit: #A5A9B3;
-$menu-text-color: #AEB6C0;
-$dot-text:#747A8A;
-$admin-resource-usage: #3B3B3B;
-$admin-resource-usage-layout: #272727;
+// region [Layout]
 
-/* Fonts */
+$starto__header__height: 66px;
+$starto__footer__height: 40px;
+$starto__sidebar__width: 300px;
+$starto__full-menu__width: 420px;
 
-// $basic-font: 'Noto Sans KR',
-// sans-serif;
-// $sub-font: 'Montserrat',
-// sans-serif;
-
-/* Data table variable change */
-
-$data-table-regular-header-font-size: 1rem;
-$data-table-regular-row-font-size: 1rem;
-
-/* Textfield Border Change */
-
-$text-field-outlined-fieldset-border: thin solid rgb(128,
-128,
-128,
-0.3);
-$card-border-radius: 15px;
-$scroll-width: 4px;
-$scroll-height: 17%;
-$scroll-background-color: #C4C4C4;
-$scroll-border-color: #707070;
-$scroll-border-radius: 10px;
-$higher-resolution: 981px;
+// endregion
 
 
+// region [Colors]
 
-// PasS
+$strato__primary__color: #1C2536;
+$strato__primary__blue__color: #1297F2;
+$strato__primary__purple__color: #1C2536;
 
-/* font-standard-size: */
-$font-standard-size: 12px;
+$strato__secondary__color: linear-gradient(90deg, #3E6EB3 0%, #7C0F80 100%);
+$strato__background__color: #ffffff;
+$strato__button__border__color: #036EB8;
 
-/* Screen-size: */
-$breakpoint-small :580px;
-$breakpoint-medium : 1350px;
-$breakpoint-large :1920px;
+$strato__success__color: #00BA88;
+$strato__error__color: #B80303;
+$strato__warning__color: #F38C25;
 
-/* Color */
-$sp-body-bg-color: #F5F7F8;
-$sp-primary: #1A3350;
-$sp-secondary: #2C2E35;
-$sp-teriary: #036EB8;
-$sp-quaternary: #2A4058;
-$sp-title: #1A3350;
-$sp-success: #29AA54;
-$sp-warning: #FFCD56;
-$sp-danger: #B80303;
-$sp-grey-900: #5D5D5D;
-$sp-grey-800: #1A3350;
+$strato__gray__100: #F7F9FA;
+$strato__gray__200: #F6F6F6;
+$strato__gray__300: #F2F2F2;
+$strato__gray__400: #EEEEEE;
+$strato__gray__500: #DDDDDD;
+$strato__gray__600: #CCCCCC;
+$strato__gray__700: #999999;
+$strato__gray__800: #666666;
+$strato__gray__900: #333333;
 
-$sp-grey-600: #5B6C82;
-$sp-grey-400: #8C98A7;
+// endregion
 
-$sp-grey-200: #F7F9FB;
-$sp-grey-100: #FBFCFD;
-$sp-blue-500: #166ED7;
-$sp-blue-400: #06ABEA;
-$sp-blue-100: #BBDEFB;
-$sp-sky-blue-500: #4B5566;
-$sp-box-border: #DBDFE1;
-$sp-orange: #FF8000;
-$sp-pink: #FC00C5;
-$sp-cerise: #FF005F;
-$sp-red: #B80303;
-$sp-green: #00BA88;
-$sp-black-500: #2F3E4E;
-$sp-black-700: #14142b;
-$sp-border-color: #dbdfe1;
-$sp-purple: #7C0F80;
 
-/* Layout */
-$sp-menu: #1C2536;
-$sp-side-menu: #FFFFFF;
-$sp-side-menu-active: rgba(22, 110, 215, 0.1);
-$sp-side-menu-active-title: #166ED7;
-$sp-button-border: #036EB8;
-$sp-button: #293752;
-$sp-red-text: #B80303;
-$sp-cancel-button: #2C2E35;
-$sp-disabled: #DBDFE1;
-$sp-mega-menu: #232B3B;
-$sp-mega-menu-hover: #46C5F3;
-$sp-mega-menu-footer: #293752;
-$sp-header: #1C2536;
+// region [font-style]
 
-/**
-updated
-*/
-$sp-grey-300: #F2F2F2;
-$sp-grey-400: #EEEEEE;
-$sp-grey-600: #CCCCCC;
-$sp-grey-700: #999999;
+$strato__default__font__color: #333333;
+$strato__default__font__style: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
-$primary: #1297F2;
-$primary-hover: #007be5;
-$primary-lined: #1297F2;
-$primary-lined-hover: #F0F7FF;
-$danger-lined: #B80303;
-$danger-lined-hover: #FFF3F3;
+// endregion
+
+

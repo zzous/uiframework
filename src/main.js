@@ -1,6 +1,7 @@
 
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
+import piniaPersist from 'pinia-plugin-persist'; // Pinia
 
 import App from './App.vue';
 import router from './router';
@@ -22,9 +23,11 @@ window.emitter = eventBus;
 import dayjs from 'dayjs';
 import vuetify from './plugins/vuetify';
 import i18n from './i18n';
+const pinia = createPinia();
+pinia.use(piniaPersist);
 
 const app = createApp(App);
-app.use(createPinia());
+app.use(pinia);
 app.use(router);
 app.use(VueUniversalModal, { teleportTarget: '#modals' });
 app.use(dayjs);

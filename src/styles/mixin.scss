@@ -1,0 +1,76 @@
+
+// region [Layout]
+
+@mixin flex-col-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+@mixin flex-col-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin flex-col-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+@mixin flex-col-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin flex-row-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+@mixin flex-row-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+@mixin flex-row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+// endregion
+
+
+// region [Typography]
+
+@mixin heading-1 { font-size: 48px; line-height: 56px; font-weight: bold; } // 숫자 카운터 대
+@mixin heading-2 { font-size: 36px; line-height: 44px; font-weight: bold; } // 메인 타이틀
+@mixin heading-3 { font-size: 28px; line-height: 36px; font-weight: bold; } // 대타이틀, 숫자 카운터 중
+@mixin heading-4 { font-size: 22px; line-height: 30px; font-weight: bold; } // 자원 영역 타이틀
+@mixin heading-5 { font-size: 18px; line-height: 26px; font-weight: bold; } // 박스 타이틀
+
+@mixin sub-title-1 { font-size: 16px; line-height: 24px; font-weight: bold; } // 팝업 타이틀, GNB 메뉴 Hover, LNB 메뉴 Hover, 범례 숫자
+@mixin sub-title-2 { font-size: 14px; line-height: 22px; font-weight: bold; } // 테이블 타이틀, 셀렉트 라벨, 팝업 리스트 타이틀, 탭 메뉴
+@mixin sub-title-3 { font-size: 12px; line-height: 20px; font-weight: bold; } // 범례 타이틀, 팝업 탭 메뉴
+
+@mixin body-1 { font-size: 16px; line-height: 24px; font-weight: 500; } // GNB, LNB, 버튼 라지 텍스트
+@mixin body-2 { font-size: 14px; line-height: 22px; font-weight: 500; } // 버튼 미디움, 자원/테이블 타이틀
+@mixin body-3 { font-size: 12px; line-height: 20px; font-weight: 500; } // 버튼 스몰, 메뉴 리스트 텍스트
+
+@mixin element-1 { font-size: 14px; line-height: 22px; font-weight: 500; } // 인풋 셀렉트 라지 박스 텍스트
+@mixin element-2 { font-size: 12px; line-height: 20px; font-weight: 500; } // 인풋 셀렉트 미디움 박스, 테이블, paging 텍스트
+@mixin element-3 { font-size: 10px; line-height: 12px; font-weight: 500; } // 차트 축 / 범례
+
+// endregion

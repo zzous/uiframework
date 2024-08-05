@@ -14,12 +14,17 @@
       <component :is="currentPageComponent" :title="state.componentsTitle"></component>
     </div>
   </div>
+  <Confirm />
+  <LoadingPopup/>
 </template>
 
 <script setup>
+import { Confirm } from '@/components';
+import LoadingPopup from '@/components/loadingPopup/LoadingPopup.vue';
+
 import { defineComponent, onMounted, reactive, computed, getCurrentInstance, shallowRef } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-import Css from '@/views/guide/Css.vue';
+// import Css from '@/views/guide/Css.vue';
 import PageLayout from '@/views/guide/PageLayout.vue';
 import Buttons from '@/views/guide/Buttons.vue';
 import Menu from '@/views/guide/Menu.vue';
@@ -33,6 +38,8 @@ import FormInputCheck from '@/views/guide/FormInputCheck.vue';
 import Modal from '@/views/guide/Modal.vue';
 import ToolTip from '@/views/guide/ToolTip.vue';
 import List from '@/views/guide/List.vue';
+import Components from '@/views/guide/Components.vue';
+import SmartSearch from '@/views/guide/SmartSearch.vue';
 import Table from '@/views/guide/Table.vue';
 import Icon from '@/views/guide/Icon.vue';
 import DatePicker from '@/views/guide/DatePicker.vue';
@@ -50,8 +57,10 @@ const state = reactive({
   guideMenu: [
     { label: '환경 설정', name: 'Settings' },
     { label: '코드 작성 가이드', name: 'Codes' },
-    { label: 'Css 가이드', name: 'Css' },
+    // { label: 'Css 가이드', name: 'Css' },
     { label: '페이지 레이아웃', name: 'PageLayout' },
+    { label: '공통 컴포넌트', name: 'Components' },
+    { label: 'Smart Search(테이블 검색)', name: 'SmartSearch' },
     { label: '테이블', name: 'Table' },
     { label: '아이콘', name: 'Icon' },
     { label: '버튼', name: 'Buttons' }
@@ -76,8 +85,10 @@ const state = reactive({
 const componentsMap = {
   'Settings': { component: Settings, title: '환경 설정' },
   'Codes': { component: Codes, title: '코드 작성 가이드' },
-  'Css': { component: Css, title: 'Css 가이드' },
+  // 'Css': { component: Css, title: 'Css 가이드' },
   'PageLayout': { component: PageLayout, title: '페이지 레이아웃' },
+  'Components': { component: Components, title: '공통 컴포넌트' },
+  'SmartSearch': { component: SmartSearch, title: 'smart search' },
   'Table': { component: Table, title: '테이블' },
   'Icon': { component: Icon, title: '아이콘' },
   'Buttons': { component: Buttons, title: '버튼' }
@@ -126,7 +137,8 @@ onMounted(() => {
 </script>
 
 <style>
-.guidewrap{width:100%; height:100%;position: relative; }
+#app { font-size: 14px; }
+.guidewrap{width:100%; height:100%;position: relative; font-size: 12px; }
 .guidetop{width:100%; height:50px;background:#1C2536;padding:0 20px; color:var(--base-wh-color); font-size:20px; font-weight:700;display: flex; align-items: center; position: absolute; left:0; top:0;}
 .guidecontentwrap{width:100%; height:100%; display:flex; padding-top:50px}
 .guidelnb{flex:0 0 200px;position: relative;}
@@ -153,7 +165,7 @@ onMounted(() => {
 
 .example { padding: 20px; }
 
-.codewrap{padding:20px;}
+.codewrap{padding: 0 20px;}
 .codetitle{font-size:16px; font-weight:700; width:100%; padding:20px 20px 20px 50px; background: url('/images/icon-arrow-up.svg') no-repeat 26px center;position: relative;}
 .codetitle > span{font-size:16px; font-weight:700; width:calc(100% - 70px); display:block; cursor: pointer;}
 .codetitle .btn{position: absolute; right:0; top:17px}

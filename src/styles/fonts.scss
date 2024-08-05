@@ -1,0 +1,54 @@
+// region [Pretendard]
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local('Pretendard Black'),
+    url('/assets/fonts/pretendard/woff/pretendard-black.woff') format('woff'),
+    url('/assets/font/pretendard/woff2/pretendard-black.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Pretendard Bold'),
+    url('/assets/fonts/pretendard/woff/pretendard-bold.woff') format('woff'),
+    url('/assets/fonts/pretendard/woff2/pretendard-bold.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local('Pretendard Medium'),
+    url('/assets/fonts/pretendard/woff/pretendard-medium.woff') format('woff'),
+    url('/assets/fonts/pretendard/woff2/pretendard-medium.woff2') format('woff2')
+}
+
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Pretendard Regular'),
+    url('/assets/fonts/pretendard/woff/pretendard-regular.woff') format('woff'),
+    url('/assets/fonts/pretendard/woff2/pretendard-regular.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local('Pretendard Thin'),
+    url('/assets/fonts/pretendard/woff/pretendard-thin.woff') format('woff'),
+    url('/assets/fonts/pretendard/woff2/pretendard-thin.woff2') format('woff2')
+}
+
+// endregion

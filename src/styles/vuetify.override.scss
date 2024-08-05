@@ -1,0 +1,196 @@
+
+// region[v-btn]
+.v-btn {
+    // common
+    .v-btn__content { @include flex-row-center; gap: 4px; }
+
+    // sizes
+    &.v-btn--size-large { @include body-1; min-width: 130px; min-height: 46px; padding: 0 10px; }
+    &.v-btn--size-default { @include body-2; min-width: 110px; min-height: 36px; padding: 0 14px; }
+    &.v-btn--size-small { @include body-3; min-width: 100px; min-height: 30px; padding: 0 23px; }
+
+    // variants
+    &.v-btn--variant-outlined {
+        border-color: $strato__primary__blue__color; color: $strato__primary__blue__color;
+
+        &.btn--delete { border-color: $strato__error__color; color: $strato__error__color; }
+        &.v-btn--disabled {
+            color: $strato__gray__600;
+            border-color: $strato__gray__400;
+            opacity: 1;
+            .v-btn__overlay { opacity: 0; }
+        }
+
+
+    }
+
+    &.v-btn--variant-default {
+        color: #ffffff; background-color: $strato__primary__blue__color;
+
+        &:hover { background-color: darken($strato__primary__blue__color, 12%); }
+        &.v-btn--disabled {
+            color: $strato__gray__600;
+            background-color: $strato__gray__200;
+            opacity: 1;
+            .v-btn__overlay { opacity: 0; }
+        }
+    }
+
+    &.btn--point {
+        color: #ffffff;
+        outline: 1px solid #ffffff;
+        background: transparent;
+
+        &.v-btn--disabled { outline: none; color: $strato__gray__900; background: darken($strato__primary__color, 16%); }
+        &:hover {
+            outline-color: transparent;
+            background: linear-gradient(90deg, #3E6EB3 0%, #7C0F80 100%);
+        }
+    }
+}
+// endregion
+
+
+// region [v-Text-Field + v-select]
+
+.v-input {
+    .v-field {
+        border-radius: 5px;
+
+        .v-field__outline {
+            color: $strato__gray__500;
+            --v-field-border-width: 1px !important;
+        }
+
+        &.v-field:not(.v-field--disabled):hover, &.v-field:not(.v-field--disabled):focus-within {
+            .v-field__outline { color: $strato__primary__blue__color; }
+        }
+
+        &.v-field--variant-outlined.v-field--focused .v-input__control > .v-input__slot fieldset {
+            color: rgba(169, 169, 169, 0.33);
+        }
+    }
+
+    // size
+    &.v-input--density-default {
+
+        .v-field__field .v-field__input {
+            min-height: 40px;
+            padding: 8px 9px;
+        }
+
+        .v-select__selection-text {
+            @include element-1;
+        }
+        input { @include body-1; }
+    }
+
+    &.v-input--density-comfortable {
+
+        .v-field__field .v-field__input {
+            min-height: 30px; padding: 5px 8px;
+        }
+
+        .v-select__selection-text {
+            @include element-2;
+        }
+        input { @include element-2; }
+    }
+
+
+}
+// endregion
+
+
+// region [v-select]
+.v-overlay-container {
+    .v-select__content {
+        .v-list {
+            padding: 5px 0;
+
+            .v-list-item {
+                padding: 0 8px;
+                margin: 5px;
+                border-radius: 12px !important;
+
+                &:hover {
+                    background-color: #D1EAFB;
+
+                    .v-list-item-title {
+                        font-weight: bold;
+                        color: #0E96F1;
+                    }
+                }
+
+                .v-list-item-title {
+                    @include body-3;
+                    height: 20px;
+                }
+            }
+
+            .v-list-item .v-list-item-title {
+
+            }
+
+            // size
+            .v-list-item.v-list-item--density-default {
+                min-height: 20px;
+            }
+            .v-list-item.v-list-item--density-comfortable {
+                min-height: 26px;
+            }
+        }
+    }
+}
+// endregion
+
+
+// region [v-data-table]
+
+.v-table {
+
+    border-top: 1px solid #000;
+
+    thead .v-data-table__td {
+        background-color: #F4FBFE;
+
+        .v-data-table-header__content { @include sub-title-2; }
+    }
+
+    .v-data-table__td {
+        @include element-2;
+        vertical-align: middle;
+    }
+
+    & ~ .v-pagination { margin-top: 64px; }
+}
+
+// endregion
+
+
+// region [v-pagination]
+
+.v-pagination {
+    width: 100%;
+
+    .v-pagination__list {
+        .v-pagination__item, .v-pagination__prev, .v-pagination__next {
+            margin: 4px;
+
+            .v-btn { min-width: 40px; min-height: 40px; padding: 0; }
+        }
+    }
+}
+
+
+// endregion
+
+
+// region [v-form]
+
+.v-form {
+    @include flex-col-start;
+    width: 100%;
+}
+
+// endregion
