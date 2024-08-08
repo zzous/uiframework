@@ -645,7 +645,7 @@ export default {
 </script>
   
   <style lang="scss">
-  @import '@/styles/table.scss';
+  // @import '@/styles/table.scss';
   .sp-data-table-pagination {
     position: relative;
     height: 40px;

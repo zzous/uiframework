@@ -61,7 +61,7 @@ const state = reactive({
     { label: '페이지 레이아웃', name: 'PageLayout' },
     { label: '공통 컴포넌트', name: 'Components' },
     { label: 'Smart Search(테이블 검색)', name: 'SmartSearch' },
-    { label: '테이블', name: 'Table' },
+    // { label: '테이블', name: 'Table' },
     { label: '아이콘', name: 'Icon' },
     { label: '버튼', name: 'Buttons' }
     // { label: '카드', name: 'Card' },
@@ -89,7 +89,7 @@ const componentsMap = {
   'PageLayout': { component: PageLayout, title: '페이지 레이아웃' },
   'Components': { component: Components, title: '공통 컴포넌트' },
   'SmartSearch': { component: SmartSearch, title: 'smart search' },
-  'Table': { component: Table, title: '테이블' },
+  // 'Table': { component: Table, title: '테이블' },
   'Icon': { component: Icon, title: '아이콘' },
   'Buttons': { component: Buttons, title: '버튼' }
   // 'Menu': { component: Menu, title: '메뉴' },
@@ -139,7 +139,7 @@ onMounted(() => {
 <style>
 #app { font-size: 14px; }
 .guidewrap{width:100%; height:100%;position: relative; font-size: 12px; }
-.guidetop{width:100%; height:50px;background:#1C2536;padding:0 20px; color:var(--base-wh-color); font-size:20px; font-weight:700;display: flex; align-items: center; position: absolute; left:0; top:0;}
+.guidetop{width:100%; height:50px;background:#1C2536;padding:0 20px; color: #fff; font-size:20px; font-weight:700;display: flex; align-items: center; position: absolute; left:0; top:0;}
 .guidecontentwrap{width:100%; height:100%; display:flex; padding-top:50px}
 .guidelnb{flex:0 0 200px;position: relative;}
 .guidelnb .menulist {position: relative; z-index: 3;}
@@ -157,6 +157,7 @@ onMounted(() => {
 
 .guidememo{padding:20px;}
 .guidememo .memotitle{font-size:16px; font-weight:700;  background:url('/images/icon-ribbon.svg') no-repeat left center; padding-left:20px; margin-bottom:20px}
+.guidememo .example .memotitle { display: inline-block; padding: 0 20px 0 0; margin: 20px 0; font-size:15px; font-weight:700; background:url('/images/icon-arrow-right.svg') right center no-repeat }
 
 .memo-list{margin-left:24px}
 .memo-list li{position: relative; padding-left:10px; margin-top:10px;}
@@ -166,9 +167,9 @@ onMounted(() => {
 .example { padding: 20px; }
 
 .codewrap{padding: 0 20px;}
-.codetitle{font-size:16px; font-weight:700; width:100%; padding:20px 20px 20px 50px; background: url('/images/icon-arrow-up.svg') no-repeat 26px center;position: relative;}
+.codetitle{font-size:16px; font-weight:700; width:100%; padding:20px 20px 20px 0; position: relative;}
 .codetitle > span{font-size:16px; font-weight:700; width:calc(100% - 70px); display:block; cursor: pointer;}
-.codetitle .btn{position: absolute; right:0; top:17px}
+.codetitle .v-btn {position: absolute; right: 0; top:17px}
 .code{background: #282c34;border-radius: 6px;padding: 10px 20px; height: auto; transition: all .3s;}
 code{color: #FFCB6B;;font-family: Consolas, monospace !important;}
 .up.codewrap .codetitle{ background: url('/images/icon-arrow-down.svg') no-repeat 26px center; border:solid 1px; border-radius:5px;}
@@ -176,8 +177,8 @@ code{color: #FFCB6B;;font-family: Consolas, monospace !important;}
 .up.codewrap .codetitle + .code pre{display: none;}
 .up.codewrap .codetitle .btn{display: none;}
 .tagstyle{color:#F07178; font-weight:700;}
-.code.CSS code{color:#C3E88D}
-.code.HTML code{color:#F07178;}
-.code.JS code{color:#89DDFF;}
+/* .code.CSS code{color:#C3E88D}
+.code.HTML code{color:#F07178;} */
+.code code{color:#89DDFF;}
 .link{color:#006e6c; font-weight: 700;}
 </style>

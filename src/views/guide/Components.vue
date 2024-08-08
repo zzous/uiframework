@@ -3,15 +3,29 @@
     <div class="guidetitle">{{ title }}</div>
     <div class="guidememo">
       <div class="memotitle">Confirm</div>
+      <ul class="memo-list">
+        <li>import { initialConfirmStore } from '@/stores/common/confirmStore.js' // 컨펌창은 store 에서 제어</li>
+        <li><strong class="tagstyle">confirmStore.onOpen()</strong> // 컨펌 open 함수</li>
+        <li>
+          function <strong class="tagstyle">onConfirmAction()</strong> { alert('컨펌 확인 액션'); } // 컨펌 확인 콜백 (필요시 사용)<br>
+          function <strong class="tagstyle">onCancelAction()</strong> { alert('컨펌 취소 액션'); } // 컨펌 취소 콜백 (필요시 사용)
+        </li>
+        <!-- <li><strong class="tagstyle">케밥 케이스(kebab case)</strong> `my-class-name` 와 <strong class="tagstyle">BEM(BEM, Block Element Modifier)</strong> `my-class-name__type` 과 혼용하여 사용한다.</li>
+        <li><strong class="tagstyle">SCSS 사용</strong></li>
+        <li>공통 모듈 (commponent component) 을 제외한 페이지 STYLE 은 /styles/pages/ 폴더 내에 pageName.scss 정의 후 작성한다. 페이지 내에 <strong class="tagstyle">&lt;style&gt; 사용 금지</strong></li> -->
+      </ul>
       <div class="example">
-        <v-btn @click="onOpenConfirm">컨펌 모달 열기</v-btn>
+        <div class="memotitle">Example</div>
+        <div>
+          <v-btn @click="onOpenConfirm">컨펌 모달 열기</v-btn>
+        </div>
       </div>
       <div class="codewrap">
-        <div :class="['codetitle', state.confirmSample.title]" >
-          <span>{{state.confirmSample.title}}</span>
-          <button type="button" class="btn btn-ss" @click="copyCode(state.confirmSample.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</button>
+        <div class="codetitle">
+          <span>{{ state.confirmSample.title }}</span>
+          <v-btn type="button" class="outline--primary" size="small" @click="copyCode(state.confirmSample.sampleCodeJS)">복사하기</v-btn>
         </div>
-        <div :class="['code', state.confirmSample.title]" >
+        <div class="code">
 <pre>
 <code>
 {{ state.confirmSample.sampleCodeJS }}
@@ -38,29 +52,13 @@
             </FormRowItem>
           </FormRow>
         </v-form>
-
-        <!-- <div>
-          <FormRow>
-            <FormRowItem label="사용자 명(한글)" required>
-              홍길동
-            </FormRowItem>
-            <FormRowItem label="사용자 명(영문)">
-              Hong-gil-dong
-            </FormRowItem>
-          </FormRow>
-          <FormRow>
-            <FormRowItem label="left label">
-              Left Text
-            </FormRowItem>
-          </FormRow>
-        </div> -->
       </div>
       <div class="codewrap">
-        <div :class="['codetitle', state.formLayoutSample.title]" >
-          <span>{{state.formLayoutSample.title}}</span>
-          <button type="button" class="btn btn-ss" @click="copyCode(state.formLayoutSample.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</button>
+        <div class="codetitle">
+          <span>{{ state.formLayoutSample.title }}</span>
+          <v-btn type="button" class="outline--primary" size="small" @click="copyCode(state.formLayoutSample.sampleCodeJS)">복사하기</v-btn>
         </div>
-        <div :class="['code', state.formLayoutSample.title]" >
+        <div class="code">
 <pre>
 <code>
 {{ state.formLayoutSample.sampleCodeJS }}
@@ -87,11 +85,11 @@
         </ListView>
       </div>
       <div class="codewrap">
-        <div :class="['codetitle', state.listViewSample.title]" >
+        <div class="codetitle">
           <span>{{state.listViewSample.title}}</span>
-          <button type="button" class="btn btn-ss" @click="copyCode(state.listViewSample.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</button>
+          <v-btn type="button" class="outline--primary" size="small" @click="copyCode(state.listViewSample.sampleCodeJS)">복사하기</v-btn>
         </div>
-        <div :class="['code', state.listViewSample.title]" >
+        <div class="code">
 <pre>
 <code>
 {{ state.listViewSample.sampleCodeJS }}
@@ -106,9 +104,9 @@
         <v-btn @click="onLoading">on loading</v-btn>
       </div>
       <div class="codewrap">
-        <div :class="['codetitle', state.globalLoadingSample.title]" >
-          <span>{{state.globalLoadingSample.title}}</span>
-          <button type="button" class="btn btn-ss" @click="copyCode(state.globalLoadingSample.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</button>
+        <div class="codetitle">
+          <span>{{ state.globalLoadingSample.title }}</span>
+          <v-btn type="button" class="outline--primary" size="small" @click="copyCode(state.globalLoadingSample.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</v-btn>
         </div>
         <div :class="['code', state.globalLoadingSample.title]" >
 <pre>
@@ -156,11 +154,11 @@
         </Modal>
       </div>
       <div class="codewrap">
-        <div :class="['codetitle', state.modalSample.title]" >
+        <div class="codetitle">
           <span>{{state.modalSample.title}}</span>
-          <button type="button" class="btn btn-ss" @click="copyCode(state.modalSample.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</button>
+          <v-btn type="button" class="outline--primary" size="small" @click="copyCode(state.modalSample.sampleCodeJS)">복사하기</v-btn>
         </div>
-        <div :class="['code', state.modalSample.title]" >
+        <div class="code">
 <pre>
 <code>
 {{ state.modalSample.sampleCodeJS }}
@@ -189,7 +187,7 @@ const props = defineProps({ title: String });
 const state = reactive({
   className: '',
   confirmSample: {
-    title: 'Confirm',
+    title: 'Confirm Example Code',
 /**
  * @Confirm
  */
@@ -221,7 +219,7 @@ function onCancelAction() {
  * @formLayout
  */
   formLayoutSample: {
-    title: 'formLayout',
+    title: 'formLayout Example Code',
     sampleCodeJS: `///// template
 <v-form>
   <FormRow title="기본 정보">
@@ -243,7 +241,7 @@ function onCancelAction() {
 import { FormRow, FormRowItem } from '@/components/index.js';`
   },
   listViewSample: {
-    title: 'listView',
+    title: 'listView Example Code',
     sampleCodeJS: `///// template
 <ListView list-count="10" @on-refresh="() => {}" last-date="2023-05-30 14:23:12">
   <template #button-group>
@@ -266,7 +264,7 @@ import SmartSearch from '@/components/smartSearch/SmartSearch.vue';
 const { originalList, list, page, pageCount, initializeList, onUpdateSmartSearch } = useListPage();`
   },
   globalLoadingSample: {
-    title: 'globalLoading',
+    title: 'globalLoading Example Code',
     sampleCodeJS: `///// Layout.vue
 <LoadingPopup/>
 
@@ -277,7 +275,7 @@ loadingStore.onLoading(); // loading on
 loadingStore.offLoading(); // loading off`
   },
   modalSample: {
-    title: 'modal',
+    title: 'modal Example Code',
     sampleCodeJS: `///// template
 <v-btn @click="onOpen">모달</v-btn>
 <Modal title="인증키" :isOpen="isOpen" :onOpen="onOpen" :onClose="onClose">

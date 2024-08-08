@@ -35,11 +35,11 @@ import { useCommFunc } from '@/core/helper/common.js';
 const props = defineProps({ title: String });
 const { goToPage } = useCommFunc();
 const state = reactive({
-    className: '',
-    codeSample: [
-        {
-            title: 'HTML',
-            sampleCodeJS: `
+  className: '',
+  codeSample: [
+    {
+      title: 'HTML',
+      sampleCodeJS: `
 <!--alert-->
 <div class="ui-alert warning">
     <div class="ui-alert-wrap">
@@ -76,10 +76,10 @@ const state = reactive({
     </div>
 </div>
 `
-        },
-        {
-            title: 'CSS',
-            sampleCodeJS: `.ui-alert { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; } 
+    },
+    {
+      title: 'CSS',
+      sampleCodeJS: `.ui-alert { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; } 
 .ui-alert-wrap { position: fixed; top: 50%; left: 50%; width: 344px; min-height: 150px; padding: 32px 24px 24px; border: 1px solid #767676; background-color: #fff; border-radius: 3px; transform: translate3d(-50%, -50%, 0); }
 .ui-alert-close { position: absolute; top: 16px; right: 16px; width: 20px; height: 20px; background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5 4L4 16.5' stroke='%238C949E' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M4 4L16.5 16.5' stroke='%238C949E' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E"); }
 .ui-alert-msg { position: relative; min-height: 40px; padding-left: 46px; color: #444; }
@@ -95,22 +95,22 @@ const state = reactive({
 .ui-txt-guide .ui-txt-guide-head p { font-size: 20px; font-weight: bold; color: #222; text-align: center; } 
 .ui-txt-guide .ui-txt-guide-cont { border-top: 1px solid #d2d2d2; padding: 20px; }
 .ui-txt-guide .ui-txt-guide-cont p { font-size: 14px; text-align: center; }`
-        }
-    ]
+    }
+  ]
 });
 const toggleAcc = (idx) => {
-    const tag = document.getElementsByClassName('codewrap');
-    tag[idx].classList.contains('up') ? tag[idx].classList.remove('up') : tag[idx].classList.add('up');
+  const tag = document.getElementsByClassName('codewrap');
+  tag[idx].classList.contains('up') ? tag[idx].classList.remove('up') : tag[idx].classList.add('up');
 };
 const copyCode = (code) => {
-    navigator.clipboard.writeText(code)
-        .then(() => {
-            alert('코드가 클립보드에 복사되었습니다.');
-        })
-        .catch((err) => {
-            console.error('클립보드 복사 실패:', err);
-            alert('클립보드 복사에 실패했습니다.');
-        });
+  navigator.clipboard.writeText(code)
+    .then(() => {
+      alert('코드가 클립보드에 복사되었습니다.');
+    })
+    .catch((err) => {
+      console.error('클립보드 복사 실패:', err);
+      alert('클립보드 복사에 실패했습니다.');
+    });
 };
 
 </script>

@@ -3,6 +3,7 @@
 .v-btn {
     // common
     .v-btn__content { @include flex-row-center; gap: 4px; }
+    & + & { margin-left: 8px; }
 
     // sizes
     &.v-btn--size-large { @include body-1; min-width: 130px; min-height: 46px; padding: 0 10px; }
@@ -24,7 +25,8 @@
 
     }
 
-    &.v-btn--variant-default {
+    &.v-btn--variant-plain {
+        opacity: 1;
         color: #ffffff; background-color: $strato__primary__blue__color;
 
         &:hover { background-color: darken($strato__primary__blue__color, 12%); }
@@ -36,7 +38,7 @@
         }
     }
 
-    &.btn--point {
+    &.point {
         color: #ffffff;
         outline: 1px solid #ffffff;
         background: transparent;
@@ -47,6 +49,45 @@
             background: linear-gradient(90deg, #3E6EB3 0%, #7C0F80 100%);
         }
     }
+
+    &.v-btn--variant-plain.outline--primary {
+        background-color: transparent;
+        border: 1px solid $strato__primary__blue__color;
+
+        .v-btn__content { color: $strato__primary__blue__color; }
+        &:hover { background-color: #F0F7FF; }
+        &.v-btn--disabled {
+            border-color: $strato__gray__600;
+            .v-btn__content { color: $strato__gray__600; }
+        }
+    }
+
+    &.v-btn--variant-plain.outline--success {
+        background-color: transparent;
+        border: 1px solid $strato__success__color;
+
+        &:hover { background-color: #F2FFFC; }
+        .v-btn__content { color: $strato__success__color; }
+        &.v-btn--disabled {
+            border-color: $strato__gray__600;
+            .v-btn__content { color: $strato__gray__600; }
+        }
+    }
+
+    &.v-btn--variant-plain.outline--error {
+        border: 1px solid $strato__error__color;
+        background-color: #fff;
+
+        .v-btn__content { color: $strato__error__color; }
+
+        &:hover { background-color: #FFF3F3; }
+        &.v-btn--disabled {
+            color: $strato__gray__600;
+            background-color: $strato__gray__200;
+            opacity: 1;
+            .v-btn__overlay { opacity: 0; }
+        }
+    }
 }
 // endregion
 
@@ -54,8 +95,13 @@
 // region [v-Text-Field + v-select]
 
 .v-input {
+
+    & + .v-btn { margin-left: 8px; }
+
     .v-field {
         border-radius: 5px;
+
+        .v-field__input { @include element-1; }
 
         .v-field__outline {
             color: $strato__gray__500;

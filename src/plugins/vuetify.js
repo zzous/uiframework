@@ -46,7 +46,7 @@ const vuetify = createVuetify({
   components,
   directives,
   defaults: {
-    VBtn: {variant: 'default'},
+    VBtn: {variant: 'plain'},
     VTextField: {variant: 'outlined', hideDetails: 'auto', density: 'comfortable'},
     VSelect: {variant: 'outlined', hideDetails: 'auto', density: 'comfortable'},
     VDataTable: {hideDefaultFooter: true, noDataText: '데이터가 존재하지 않습니다.'},
