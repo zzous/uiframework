@@ -5,27 +5,37 @@
       <div class="memotitle">Css 작성 가이드</div>
       <ul class="memo-list">
         <li><strong class="tagstyle">케밥 케이스(kebab case)</strong> `my-class-name` 와 <strong class="tagstyle">BEM(BEM, Block Element Modifier)</strong> `my-class-name__type` 과 혼용하여 사용한다.</li>
-        <!-- <li>일반적인 경우 케밥 케이스(kebab case) 사용</li> -->
         <li><strong class="tagstyle">SCSS 사용</strong></li>
         <li>공통 모듈 (commponent component) 을 제외한 페이지 STYLE 은 /styles/pages/ 폴더 내에 pageName.scss 정의 후 작성한다. 페이지 내에 <strong class="tagstyle">&lt;style&gt; 사용 금지</strong></li>
       </ul>
     </div>
+
     <div class="guidememo">
-        <div class="memotitle">directory ( 폴더구조 )</div>
-      </div>
-      <div class="codewrap" v-for="(item, index) in state.codeSample" :key="index">
-        <div :class="['codetitle', state.className]" >
-          <span @click="toggleAcc(index)">{{item.title}}</span>
-          <button type="button" class="btn btn-ss" @click="copyCode(item.sampleCodeJS)"> <span class="ico-menu"></span> 복사하기</button>
+      <div class="memotitle">Directory ( 폴더구조 )</div>
+      <div class="codewrap">
+        <div class="codetitle">
+          <span>{{ state.directorySample.title }}</span>
+          <v-btn type="button" class="outline--primary" size="small" @click="copyCode(state.directorySample.sampleCodeJS)">복사하기</v-btn>
         </div>
-        <div :class="['code', item.title]" >
-  <pre>
-  <code>
-  {{ item.sampleCodeJS }}
-  </code>
-  </pre>
+        <div class="code">
+<pre>
+<code>
+{{ state.directorySample.sampleCodeJS }}
+</code>
+</pre>
+        </div>
       </div>
+      <!-- <div class="example">
+        <div class="memotitle">api</div>
+      </div>
+      <div class="example">
+        <div class="memotitle">assets</div>
+      </div>
+      <div class="example">
+        <div class="memotitle">components</div>
+      </div> -->
     </div>
+    
   </div>
 </template>
 <script setup>
@@ -33,11 +43,9 @@ import { reactive } from 'vue';
 const props = defineProps({ title: String });
 const state = reactive({
   className: '',
-  codeSample: [
-    {
-      title: 'Directory',
-      sampleCodeJS: `
-src
+  directorySample: {
+    title: 'Directory',
+    sampleCodeJS: `src
 ├─api # 
 ├─assets # 
 ├─components
@@ -58,13 +66,9 @@ src
 ├─style #
 ├─template #  FormTemplate, ListTemplate, ModalTemplate
 └─views # 실제 화면 작업이 필요한 dir 내부의 Directory는 추가될 수 있음`
-    }
-  ]
+  }
 });
-const toggleAcc = (idx) => {
-  const tag = document.getElementsByClassName('codewrap');
-  tag[idx].classList.contains('up') ? tag[idx].classList.remove('up') : tag[idx].classList.add('up');
-};
+
 const copyCode = (code) => {
   navigator.clipboard.writeText(code)
     .then(() => {

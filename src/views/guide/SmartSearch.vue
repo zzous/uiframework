@@ -2,9 +2,10 @@
   <div class="guidecontent">
     <div class="guidetitle">{{ title }}</div>
     <div class="guidememo">
-      <div class="memotitle">SmartSearch + v-data-table + v-pagination</div>
+      <div class="memotitle">ListView + SmartSearch + v-data-table + v-pagination</div>
       <ul class="memo-list">
-        <li>SmartSearch + v-data-table + v-pagination 조합 사용</li>
+        <li>ListView + SmartSearch + v-data-table + v-pagination 조합 사용</li>
+        <li>일반적인 &lt;table&gt; 형태의 리스트 페이지</li>
         <!-- <li><strong class="tagstyle">케밥 케이스(kebab case)</strong> `my-class-name` 와 <strong class="tagstyle">BEM(BEM, Block Element Modifier)</strong> `my-class-name__type` 과 혼용하여 사용한다.</li>
         <li><strong class="tagstyle">SCSS 사용</strong></li>
         <li>공통 모듈 (commponent component) 을 제외한 페이지 STYLE 은 /styles/pages/ 폴더 내에 pageName.scss 정의 후 작성한다. 페이지 내에 <strong class="tagstyle">&lt;style&gt; 사용 금지</strong></li> -->
@@ -31,11 +32,11 @@
           <v-btn type="button" class="outline--primary" size="small" @click="copyCode(state.codeSample.sampleCodeJS)">복사하기</v-btn>
         </div>
         <div class="code">
-    <pre>
-    <code>
-    {{ state.codeSample.sampleCodeJS }}
-    </code>
-    </pre>
+<pre>
+<code>
+{{ state.codeSample.sampleCodeJS }}
+</code>
+</pre>
         </div>
       </div>
     </div>
@@ -58,14 +59,16 @@ const state = reactive({
   className: '',
   codeSample: {
     title: 'smart search + table',
-    sampleCodeJS: `
-<template #search-area>
-  <SmartSearch :items="headers" :datas="originalList" @update:search="onUpdateSmartSearch" />
-</template>
-<template #content>
-  <v-data-table :headers="headers" :items="list" />
-  <v-pagination v-model="page" :length="pageCount" />
-</template>
+    sampleCodeJS: `// template
+<ListView list-count="10" @on-refresh="() => {}" last-date="2023-05-30 14:23:12">
+  <template #search-area>
+    <SmartSearch :items="headers" :datas="originalList" @update:search="onUpdateSmartSearch" />
+  </template>
+  <template #content>
+    <v-data-table :headers="headers" :items="list" />
+    <v-pagination v-model="page" :length="pageCount" />
+  </template>
+</ListView>
 
 // script
 import { useListPage } from '@/composables/index.js';
